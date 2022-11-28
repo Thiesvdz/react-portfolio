@@ -9,9 +9,13 @@ const homepage = () => {
         <>
             <Navigation/>
             <Header />
-            <About />
-            <Skills />
-            {/*<Projects /> */}
+            <About 
+                naam="Thies van der Zon"
+                leeftijd="18"
+                opleiding="Software development"
+            />
+            {/*<Skills />
+            <Projects /> */}
         </>
     )
 }
