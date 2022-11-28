@@ -2,7 +2,7 @@ import "./About.css"
 
 const About = () => {
     return(
-        <h1>dad</h1>
+        <h1>dadadsad</h1>
     )
 }
 
