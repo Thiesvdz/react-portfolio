@@ -10,8 +10,8 @@ const homepage = () => {
             <Navigation/>
             <Header />
             <About />
-            {/*<Skills />
-            <Projects /> */}
+            <Skills />
+            {/*<Projects /> */}
         </>
     )
 }
