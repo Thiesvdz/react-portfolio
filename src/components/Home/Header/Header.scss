@@ -1,6 +1,11 @@
 $brightGreen: #25ffb3;
 $offWhite: #eee;
+<<<<<<< HEAD
+$padding2: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+=======
 
+>>>>>>> main
 .header{
     background: #1f2235;
     height: 100vh;
@@ -49,5 +54,24 @@ $offWhite: #eee;
             }
         }
         
+    }
+
+
+    .header__image__container{
+        background: $offWhite;
+        padding: 2rem 2rem 2rem;
+        text-align: center;
+        transform: rotate(10deg);
+        
+        .header__socials__image{
+            width: 30rem;
+            height: 30rem;
+        }
+        
+        .header__image__h2{
+            font-family: 'Dancing Script', cursive;
+            font-size: 200%;
+            padding: 1rem;
+        }
     }
 }

@@ -8,6 +8,13 @@ const homepage = () => {
     return(
         <>
             <Navigation/>
+            <Header 
+                titelH1="Ik ben Thies van der Zon"
+                titelH2="Enthousiaste en leergierige software developer"
+                titelH3="Welkom op mijn portfolio"
+                imageH2=""
+            />
+            <About />
             <Header />
             <About 
                 naam="Thies van der Zon"

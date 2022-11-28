@@ -10,6 +10,9 @@ const About = (props) => {
     //     setStyle("show")
     // }
     return(
+<<<<<<< HEAD
+        <h1>dadadsad</h1>
+=======
         <section className="about__section" >
             <article className="about__leftside">
                 <figure className="about__image__container">
@@ -46,6 +49,7 @@ const About = (props) => {
             </article>
 
         </section>
+>>>>>>> main
     )
 }
 
