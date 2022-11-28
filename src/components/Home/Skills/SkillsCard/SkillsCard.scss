@@ -1,0 +1,36 @@
+$Green: hsl(159, 100%, 37%);
+$offWhite: #eee;
+$darkblue:  #1f2235;
+
+.article__skills__card{
+    background: white;
+    width: 30rem;
+    height: 30rem;
+    
+    .article__skills__header{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        background: $Green;
+        .article__image__container{
+            width: 12rem;
+
+            .article__image{
+                width: 12rem;
+            }
+        }
+    }
+    .article__skills__footer{
+        height: 50%;
+        background: $offWhite;
+        padding: 1rem;
+        .article__skills__h2{
+          color: $darkblue;  
+        } 
+        .article__skills__p{
+            color: $darkblue;
+        }
+    }
+    
+}

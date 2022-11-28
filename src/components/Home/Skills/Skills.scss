@@ -1,0 +1,29 @@
+.section__skills{
+    min-height: 100vh;
+    gap: 2rem;
+    // padding: 15rem;
+    display: grid;
+    grid-template-columns: repeat(4, 30rem);
+    justify-content: center;
+    align-content: center;
+    padding: 8rem;
+    
+}
+
+@media screen and (max-width: 1300px){
+    .section__skills{
+        grid-template-columns: repeat(3, 30rem);
+    }
+}
+
+@media screen and (max-width: 975px){
+    .section__skills{
+        grid-template-columns: repeat(2, 30rem);
+    }
+}
+
+@media screen and (max-width: 660px){
+    .section__skills{
+        grid-template-columns: repeat(1, 30rem);
+    }
+}
