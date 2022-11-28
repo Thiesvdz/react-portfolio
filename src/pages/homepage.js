@@ -14,8 +14,6 @@ const homepage = () => {
                 titelH3="Welkom op mijn portfolio"
                 imageH2=""
             />
-            <About />
-            <Header />
             <About 
                 naam="Thies van der Zon"
                 leeftijd="18"
