@@ -19,8 +19,8 @@ const homepage = () => {
                 leeftijd="18"
                 opleiding="Software development"
             />
-            {/*<Skills />
-            <Projects /> */}
+            <Skills />
+            {/*<Projects /> */}
         </>
     )
 }
