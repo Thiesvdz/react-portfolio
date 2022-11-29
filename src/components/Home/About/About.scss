@@ -1,13 +1,19 @@
 $brightGreen: #25ffb3;
 $offWhite: #eee;
 $darkblue:  #1f2235;
+
 .about__section{
     height: 100vh;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s all;
     background: $darkblue;
     .about__leftside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
         .about__image__container{
             background: #eee;
             background-size: cover;
@@ -15,6 +21,7 @@ $darkblue:  #1f2235;
             align-items: center;
             justify-content: center;
             height: 50%;
+            width: 50rem;
         }
         .about__image{
             width: 30rem;
@@ -22,6 +29,7 @@ $darkblue:  #1f2235;
         }
         .about__text__container{
             height: 50%;
+            width: 50rem;
             background:gray;
             font-size: 150%;
             padding: 5rem;
