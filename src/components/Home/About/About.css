@@ -1,16 +1,35 @@
 .about__section {
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  background: #1f2235;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.about__section .about__leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 65rem;
+  width: 50rem;
 }
 
 .about__section .about__leftside .about__image__container {
-  background: #eee;
+  background: linear-gradient(35deg, #eee 50%, #25ffb3 50%);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,28 +40,51 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50%;
+  height: 55%;
+  width: 50rem;
 }
 
 .about__section .about__leftside .about__image {
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
 }
 
 .about__section .about__leftside .about__text__container {
-  height: 50%;
-  background: gray;
+  text-align: center;
+  height: 40%;
+  width: 50rem;
+  background: #eee;
   font-size: 150%;
   padding: 5rem;
 }
 
+.about__section .about__leftside .about__text__container .about__text__btn {
+  border: none;
+  padding: 1.2rem 5rem;
+  background: #25ffb3;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2235;
+  margin-top: 2rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.about__section .about__leftside .about__text__container .about__text__btn:hover {
+  border: 0.3rem solid #25ffb3;
+  background: transparent;
+}
+
 .about__section .about__leftside .about__text__container .about__text__p {
-  color: #eee;
+  color: #1f2235;
   padding: 0.5rem 0;
 }
 
 .about__section .about__leftside .about__text__container .about__text__span {
-  color: #25ffb3;
+  color: #1ecc8f;
   font-weight: 600;
 }
 
@@ -71,11 +113,38 @@
   font-size: 170%;
 }
 
-.about__section .about__rightside .hide {
-  display: none;
+.about__section .about__text__footer {
+  background: #eee;
+  width: 50rem;
+  padding: 2rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
-.about__section .about__rightside .show {
-  display: block;
+.about__section .about__text__footer:hover {
+  background: #25ffb3;
+}
+
+.about__section .about__text__footer .about__text__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about__section .about__text__footer .about__text__ul .about__text__li .about__text__i {
+  font-size: 3rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.about__section .about__text__footer .about__text__ul .about__text__li .about__text__i:hover {
+  color: #eee;
 }
 /*# sourceMappingURL=About.css.map */
