@@ -21,8 +21,8 @@ const homepage = () => {
 
                
             />
-            {/*<Skills />
-            <Projects /> */}
+            <Skills />
+            {/*<Projects /> */}
         </>
     )
 }

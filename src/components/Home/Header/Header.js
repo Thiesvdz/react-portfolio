@@ -3,6 +3,9 @@ import ProfileImage from "../../../images/Profile-image/FotoThies.jpg"
 
 
 const Header = (props) => {
+
+    
+
     return(
         <header className="header">
             <section>
