@@ -17,6 +17,10 @@ const About = (props) => {
     if(aboutTextBtn === false){
        return(
             <section className="about__section" >
+                <div className="bg__square__container">
+                    <figure className="bg__square bg__square__1"></figure>
+                </div>
+                
                 <AboutProfile 
                     textDisplay={textDisplay}
                 />
