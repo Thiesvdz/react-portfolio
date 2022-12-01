@@ -6,6 +6,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -29,13 +32,11 @@
 
 .about__section .bg__square__container .bg__square__1 {
   left: -35rem;
-  top: 20rem;
 }
 
 .about__section .bg__square__container .bg__square__2 {
-  position: absolute;
   left: 50rem;
-  top: 40rem;
+  top: -20rem;
 }
 
 .about__section .about__leftside {
@@ -135,10 +136,21 @@
 .about__section .about__rightside .about__rightside__container {
   color: #eee;
   padding: 5rem;
+  display: none;
 }
 
 .about__section .about__rightside .about__rightside__p {
   font-size: 170%;
+}
+
+.about__section .about__rightside .show {
+  display: block;
+  width: 600px;
+}
+
+.about__section .about__rightside .hide {
+  display: none;
+  width: 10px;
 }
 
 .about__section .about__text__footer {
