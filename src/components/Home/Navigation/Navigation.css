@@ -1,0 +1,43 @@
+.nav{
+    height: 8rem;
+    width: 100%;
+    background:  #1f2235;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+}
+
+.nav__logo__container{
+    width: 30%;
+    /* height: 5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__logo{
+    width: 7rem;
+    height: 7rem;
+}
+
+.nav__ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__li{
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #eee;
+
+}
+
+.nav__li:hover{
+    color: #25ffb3;
+    transition: 0.3s all;
+}

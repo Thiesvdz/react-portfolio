@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import "../../../Sass/Variables.scss";
+
+.header{
+    background: #1f2235;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    
+    .header__intro__text{
+        // padding: $padding2;
+
+        .header__h1{
+            color: $offWhite;
+            font-size: 300%;
+            padding: 1rem 0;
+        }
+        .header__h2{
+            color: $offWhite;
+            font-size: 200%;
+        }
+        .header__h3{
+            color: $brightGreen;
+            font-size: 150%;
+        }
+    }
+    .header__socials{
+        display: flex;
+        padding: 2rem 0;
+        gap: 2rem; 
+
+        .header__socials__li{
+            border: 0.2rem solid $brightGreen;
+            border-radius: 50%;
+            padding: 1rem;
+            transition: 0.2s all;
+            cursor: pointer;
+            &:hover {
+                border: 0.2rem solid $offWhite;
+            }
+        }
+        .header__socials__i{
+            color: $brightGreen;
+            font-size: 2.5rem;
+            &:hover {
+                color: $offWhite;
+            }
+        }
+        
+    }
+
+
+    .header__image__container{
+        background: $offWhite;
+        padding: 2rem 2rem 2rem;
+        text-align: center;
+        transform: rotate(8deg);
+        transition: 0.3s all;
+        
+        &:hover{
+            transform: rotate(0deg);
+            transform: scale(1.05);
+            box-shadow: 1rem 1rem $brightGreen;
+        }
+        .header__socials__image{
+            width: 30rem;
+            height: 30rem;
+            filter: grayscale(50%);
+            &:hover{
+                filter: grayscale(0%);
+
+            }
+        }
+        
+        .header__image__h2{
+            font-family: 'Dancing Script', cursive;
+            font-size: 200%;
+            padding: 1rem;
+        }
+    }
+}
+
+// @media screen and (max-width: 762px){
+//     .header__image__container{
+//         background: $brightGreen;
+//         padding: 2rem 2rem 2rem;
+//         text-align: center;
+//         transform: rotate(8deg);
+//         transition: 0.3s all;
+    
+//     }
+// }
