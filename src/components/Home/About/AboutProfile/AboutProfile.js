@@ -23,7 +23,7 @@ const AboutProfile = (props) => {
           {/* {aboutInfo} */}
           <h2 className="about__text__h2">Thies van der Zon</h2>
           <p>Software Developer</p>
-        <button className="about__text__btn" onClick={props.textDisplay}>Meer lezen</button>  
+        <button className="about__text__btn" onClick={props.showHideText}>Meer lezen</button>  
         </div>
       
       <footer className="about__text__footer">
