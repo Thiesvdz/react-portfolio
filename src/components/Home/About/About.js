@@ -19,6 +19,7 @@ const About = (props) => {
             <section className="about__section" >
                 <div className="bg__square__container">
                     <figure className="bg__square bg__square__1"></figure>
+                    <figure className="bg__square bg__square__2"></figure>
                 </div>
                 
                 <AboutProfile 
@@ -30,6 +31,9 @@ const About = (props) => {
     }else{
         return(
             <section className="about__section" >
+                <div className="bg__square__container">
+                    <figure className="bg__square bg__square__2"></figure>
+                </div>
                 <AboutProfile/>
                 <AboutText />
             </section>

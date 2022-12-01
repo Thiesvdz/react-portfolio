@@ -4,24 +4,31 @@ $offWhite: #eee;
 $darkblue: #1f2235;
 
 .about__section {
-  // .bg__square__container{
-  //     z-index: -1;
-  //     position: relative;
+  .bg__square__container{
+      z-index: -1;
+      position: relative;
 
-  //     .bg__square__1{
-  //         position: absolute;
-  //         left: -30rem;
-  //         top: 10rem;
-  //         width: 40rem;
-  //         height: 40rem;
-  //         border-radius: 50%;
-  //         border: none;
-  //         // backdrop-filter: opacity(20%);
-  //         box-shadow: $brightGreen 0 0 5rem;
-  //         rotate: 45deg;
+      .bg__square{
+        position: absolute;
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        border: none;
+        background: $brightGreen; 
+        opacity: 0.75;
+        filter: blur(75px);
+      }
 
-  //     }
-  // }
+      .bg__square__1{
+          left: -35rem;
+          top: 20rem;
+      }
+      .bg__square__2{
+          position: absolute;
+          left: 50rem;
+          top: 40rem;
+      }
+  }
 
   height: 100vh;
   display: flex;
