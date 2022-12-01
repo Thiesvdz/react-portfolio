@@ -10,6 +10,34 @@
   transition: 0.5s all;
 }
 
+.about__section .bg__square__container {
+  z-index: -1;
+  position: relative;
+}
+
+.about__section .bg__square__container .bg__square {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  border: none;
+  background: #25ffb3;
+  opacity: 0.75;
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+}
+
+.about__section .bg__square__container .bg__square__1 {
+  left: -35rem;
+  top: 20rem;
+}
+
+.about__section .bg__square__container .bg__square__2 {
+  position: absolute;
+  left: 50rem;
+  top: 40rem;
+}
+
 .about__section .about__leftside {
   display: -webkit-box;
   display: -ms-flexbox;
