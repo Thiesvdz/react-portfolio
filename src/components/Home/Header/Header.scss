@@ -1,11 +1,9 @@
-$brightGreen: #25ffb3;
-$offWhite: #eee;
-$padding2: 2rem;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import "../../../Sass/Variables.scss";
 
 .header{
     background: #1f2235;
-    height: 100vh;
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -83,3 +81,14 @@ $padding2: 2rem;
         }
     }
 }
+
+// @media screen and (max-width: 762px){
+//     .header__image__container{
+//         background: $brightGreen;
+//         padding: 2rem 2rem 2rem;
+//         text-align: center;
+//         transform: rotate(8deg);
+//         transition: 0.3s all;
+    
+//     }
+// }
