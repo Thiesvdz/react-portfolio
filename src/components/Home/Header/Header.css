@@ -108,5 +108,18 @@
     -webkit-filter: grayscale(0%) !important;
             filter: grayscale(0%) !important;
   }
+  .header__intro__text .header__h1 {
+    color: #eee;
+    font-size: 180% !important;
+    padding: 1rem 0;
+  }
+  .header__intro__text .header__h2 {
+    color: #eee;
+    font-size: 120% !important;
+  }
+  .header__intro__text .header__h3 {
+    color: #25ffb3;
+    font-size: 125% !important;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

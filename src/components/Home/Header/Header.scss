@@ -82,10 +82,24 @@
 }
 
 @media screen and (max-width: $bigTablet-width){
-   
-        .header__socials__image{
-            width: 20rem!important;
-            height: 20rem!important;
-            filter: grayscale(0%)!important;
+    .header__socials__image{
+        width: 20rem!important;
+        height: 20rem!important;
+        filter: grayscale(0%)!important;
+    }
+    .header__intro__text{
+        .header__h1{
+            color: $offWhite;
+            font-size: 180%!important;
+            padding: 1rem 0;
         }
+        .header__h2{
+            color: $offWhite;
+            font-size: 120%!important;
+        }
+        .header__h3{
+            color: $brightGreen;
+            font-size: 125%!important;
+        }
+    }
 }
