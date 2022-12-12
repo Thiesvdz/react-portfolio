@@ -8,10 +8,9 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
+    padding: 2rem;
     
     .header__intro__text{
-        // padding: $padding2;
-
         .header__h1{
             color: $offWhite;
             font-size: 300%;
@@ -82,13 +81,11 @@
     }
 }
 
-// @media screen and (max-width: 762px){
-//     .header__image__container{
-//         background: $brightGreen;
-//         padding: 2rem 2rem 2rem;
-//         text-align: center;
-//         transform: rotate(8deg);
-//         transition: 0.3s all;
-    
-//     }
-// }
+@media screen and (max-width: $bigTablet-width){
+   
+        .header__socials__image{
+            width: 20rem!important;
+            height: 20rem!important;
+            filter: grayscale(0%)!important;
+        }
+}

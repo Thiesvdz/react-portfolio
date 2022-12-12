@@ -13,6 +13,7 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  padding: 2rem;
 }
 
 .header .header__intro__text .header__h1 {
@@ -98,5 +99,14 @@
   font-family: 'Dancing Script', cursive;
   font-size: 200%;
   padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .header__socials__image {
+    width: 20rem !important;
+    height: 20rem !important;
+    -webkit-filter: grayscale(0%) !important;
+            filter: grayscale(0%) !important;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

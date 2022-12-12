@@ -124,7 +124,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
 }
 
 .about__section .about__rightside .fa-arrow-right {
@@ -186,5 +185,11 @@
 
 .about__section .about__text__footer .about__text__ul .about__text__li .about__text__i:hover {
   color: #eee;
+}
+
+@media screen and (max-width: 900px) {
+  .bg__square__container {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=About.css.map */
