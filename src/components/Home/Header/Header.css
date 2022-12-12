@@ -54,6 +54,8 @@
 
 .header .header__socials .header__socials__i {
   color: #25ffb3;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
   font-size: 2.5rem;
 }
 
@@ -80,16 +82,16 @@
           box-shadow: 1rem 1rem #25ffb3;
 }
 
+.header .header__image__container:hover .header__socials__image {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 .header .header__image__container .header__socials__image {
   width: 30rem;
   height: 30rem;
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
-}
-
-.header .header__image__container .header__socials__image:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 
 .header .header__image__container .header__image__h2 {
