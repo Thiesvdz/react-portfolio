@@ -5,7 +5,7 @@
 }
 
 .article__skills__card .article__skills__header {
-  height: 50%;
+  height: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
 }
 
 .article__skills__card .article__skills__footer {
-  height: 50%;
+  height: 45%;
   background: #eee;
   padding: 1rem;
 }
