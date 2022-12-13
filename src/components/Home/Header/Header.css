@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 .header {
   background: #1f2235;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +13,7 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
+  padding: 2rem;
 }
 
 .header .header__intro__text .header__h1 {
@@ -47,16 +49,73 @@
   cursor: pointer;
 }
 
-.header .header__socials .header__socials__li:hover {
-  border: 0.2rem solid #eee;
-}
-
 .header .header__socials .header__socials__i {
   color: #25ffb3;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
   font-size: 2.5rem;
 }
 
 .header .header__socials .header__socials__i:hover {
   color: #eee;
+}
+
+.header .header__image__container {
+  background: #eee;
+  padding: 2rem 2rem 2rem;
+  text-align: center;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header .header__image__container:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1rem 1rem #25ffb3;
+          box-shadow: 1rem 1rem #25ffb3;
+}
+
+.header .header__image__container:hover .header__socials__image {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.header .header__image__container .header__socials__image {
+  width: 30rem;
+  height: 30rem;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.header .header__image__container .header__image__h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 200%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .header__socials__image {
+    width: 20rem !important;
+    height: 20rem !important;
+    -webkit-filter: grayscale(0%) !important;
+            filter: grayscale(0%) !important;
+  }
+  .header__intro__text .header__h1 {
+    color: #eee;
+    font-size: 180% !important;
+    padding: 1rem 0;
+  }
+  .header__intro__text .header__h2 {
+    color: #eee;
+    font-size: 120% !important;
+  }
+  .header__intro__text .header__h3 {
+    color: #25ffb3;
+    font-size: 125% !important;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

@@ -1,52 +1,45 @@
-import "./About.css"
-import {useState} from "react"
-import aboutImage from "../../../images/Profile-image/FotoThies.jpg"
-
+import "./About.css";
+import AboutProfile from "./AboutProfile/AboutProfile";
+import AboutText from "./AboutText/AboutText";
+import { useState, useEffect } from "react";
 
 const About = (props) => {
-    const [style, setStyle] = useState(false); 
+  const [className, setclassName] = useState("");
+  const [classNameTF, setclassNameTF] = useState(true);
 
-    // const onArrowClick = () => {
-    //     setStyle("show")
-    // }
-    return(
-        <section className="about__section" >
-            <article className="about__leftside">
-                <figure className="about__image__container">
-                    <img src={aboutImage} alt="" className="about__image"/>
-                </figure>
-                <div className="about__text__container">
-                    <p className="about__text__p"><span className="about__text__span">Naam:</span> {props.naam}</p>
-                    <p className="about__text__p"><span className="about__text__span">Leeftijd:</span> {props.leeftijd}</p>
-                    <p className="about__text__p"><span className="about__text__span">Opleiding:</span> {props.opleiding}</p>
-                    <p className="about__text__p">4</p>
-                    <p className="about__text__p">5</p>
-                </div>
-            </article>
+  const showHideText = () => {
+    setclassNameTF(!classNameTF);
 
-            <article className="about__rightside">
-                <figure className="arrow__container">
-                    <i className="fa-solid fa-arrow-right" onClick={()=>setStyle(!style)}></i>
-                </figure>
+    if (classNameTF === true) {
+      setclassName("show");
+    } else {
+      setclassName("hide");
+    }
+  };
 
-                <div className="about__rightside__container">
-                    {style?
-                    <p className="about__rightside__p">
-                        Hoi ik ben Thies van der Zon, 18 jarige software developer. <br/>
-                        In 2020 ben ik begonnen met mijn codeer avontuur, sindsdien zijn mijn skills stevig gegroeid.
-                        Ik ben door veel ups en downs gegaan met coderen, maar daar heb ik erg veel van geleerd. <br/> <br/>
+  return (
+    <section className="about__section">
+      <div className="bg__square__container">
+        <figure className="bg__square bg__square__1"></figure>
+        <figure className="bg__square bg__square__2"></figure>
+      </div>
+      <AboutProfile showHideText={showHideText} />
 
-                        Ik ben graag bezig met Front-End development en design, 
-                        omdat ik het erg leuk vind om mijn creative ideeën tot leven zie komen. <br/> 
+      <AboutText
+        AboutTextP="Hoi ik ben Thies van der Zon, 18 jarige software developer.
+                    In 2020 ben ik begonnen met mijn codeer avontuur, sindsdien zijn mijn
+                    skills stevig gegroeid. Ik ben door veel ups en downs gegaan met
+                    coderen, maar daar heb ik erg veel van geleerd.
+                    Ik ben graag bezig met Front-End development en design, omdat ik het
+                    erg leuk vind om mijn creative ideeën tot leven zie komen. 
+                    In de toekomst wil ik graag frequenter met frameworks werken zoals:
+                    React, Vue.js en Laravel. Daarnaast wil ik ook sterker worden in
+                    backend voornamelijk met php en databases."
+        showHideText={showHideText}
+        className={className}
+      />
+    </section>
+  );
+};
 
-                        In de toekomst wil ik graag frequenter met frameworks werken zoals: React, Vue.js en Laravel.
-                        Daarnaast wil ik ook sterker worden in backend voornamelijk met php en databases. 
-                    </p>:null}
-                </div>
-            </article>
-
-        </section>
-    )
-}
-
-export default About
+export default About;

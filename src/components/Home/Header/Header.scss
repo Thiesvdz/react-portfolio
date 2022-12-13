@@ -1,17 +1,16 @@
-$brightGreen: #25ffb3;
-$offWhite: #eee;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import "../../../Sass/Variables.scss";
 
 .header{
     background: #1f2235;
-    height: 100vh;
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
+    padding: 2rem;
     
     .header__intro__text{
-        // padding: $padding2;
-
         .header__h1{
             color: $offWhite;
             font-size: 300%;
@@ -37,17 +36,70 @@ $offWhite: #eee;
             padding: 1rem;
             transition: 0.2s all;
             cursor: pointer;
-            &:hover {
-                border: 0.2rem solid $offWhite;
-            }
+            // &:hover {
+            //     border: 0.2rem solid $offWhite;
+            // }
         }
         .header__socials__i{
             color: $brightGreen;
+            transition: 0.2s all;
             font-size: 2.5rem;
             &:hover {
-                color: $offWhite;
+                color: $offWhite; 
             }
         }
         
+    }
+
+
+    .header__image__container{
+        background: $offWhite;
+        padding: 2rem 2rem 2rem;
+        text-align: center;
+        transform: rotate(8deg);
+        transition: 0.3s all;
+        
+        &:hover{
+            transform: rotate(0deg);
+            transform: scale(1.05);
+            box-shadow: 1rem 1rem $brightGreen;
+        }
+        &:hover .header__socials__image{
+            filter: grayscale(0%);
+        } 
+        .header__socials__image{
+            width: 30rem;
+            height: 30rem;
+            filter: grayscale(50%);
+        }
+        
+        .header__image__h2{
+            font-family: 'Dancing Script', cursive;
+            font-size: 200%;
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bigTablet-width){
+    .header__socials__image{
+        width: 20rem!important;
+        height: 20rem!important;
+        filter: grayscale(0%)!important;
+    }
+    .header__intro__text{
+        .header__h1{
+            color: $offWhite;
+            font-size: 180%!important;
+            padding: 1rem 0;
+        }
+        .header__h2{
+            color: $offWhite;
+            font-size: 120%!important;
+        }
+        .header__h3{
+            color: $brightGreen;
+            font-size: 125%!important;
+        }
     }
 }

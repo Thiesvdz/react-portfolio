@@ -9,6 +9,8 @@ import PHP from "../../../images/icons-talen/php.svg"
 import WORDPRESS from "../../../images/icons-talen/wordpress.svg"
 import SASS from "../../../images/icons-talen/sass.svg"
 
+
+
 const Skills = () => {
     return(
         <section className="section__skills">
