@@ -49,10 +49,6 @@
   cursor: pointer;
 }
 
-.header .header__socials .header__socials__li:hover {
-  border: 0.2rem solid #eee;
-}
-
 .header .header__socials .header__socials__i {
   color: #25ffb3;
   -webkit-transition: 0.2s all;

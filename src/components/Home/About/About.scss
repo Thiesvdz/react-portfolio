@@ -2,11 +2,12 @@
 @import "../../../Sass/Variables.scss";
 
 .about__section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s all;
+  padding: 2rem;
   .bg__square__container{
       z-index: -1;
       position: relative;
@@ -47,7 +48,7 @@
       align-items: center;
       justify-content: center;
       height: 55%;
-      width: 50rem;
+      width: 100%;
     }
     .about__image {
       width: 25rem;
@@ -58,7 +59,7 @@
       // background: linear-gradient(100deg, $offWhite 50%, $brightGreen 50%);
       text-align: center;
       height: 40%;
-      width: 50rem;
+      width: 100%;
       background: $offWhite;
       font-size: 150%;
       padding: 5rem;
@@ -121,7 +122,7 @@
   .about__text__footer {
     // height: 5%;
     background: $offWhite;
-    width: 50rem;
+    width: 100%;
     padding: 2rem;
     transition: 0.3s all;
     &:hover{
@@ -152,6 +153,37 @@
 @media screen and (max-width: $bigTablet-width){
   .bg__square__container{
     display: none!important;
-}
+  } 
 
+  .about__section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__rightside__container {
+    padding: 2rem!important;
+  }
+  .about__rightside__p {
+    font-size: 130%!important;
+
+  }
+
+  .show{
+    width: 375px!important;
+  }
+  .about__leftside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65rem;
+    width: 35rem!important;
+  }
+  .about__image {
+    width: 20rem!important;
+    height: 20rem!important;
+  }
+  .about__text__container {
+    font-size: 120%!important;
+  }
+  
 }
