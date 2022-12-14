@@ -79,7 +79,7 @@
 .fa-times,
 .fa-bars {
   color: #eee;
-  font-size: 125%;
+  font-size: 150%;
 }
 
 @media screen and (max-width: 900px) {
@@ -111,11 +111,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background: 255, 255, 255, 0.25;
-    -webkit-box-shadow: 0 0.8rem 3.2rem rgba(31, 38, 135, 0.37);
-            box-shadow: 0 0.8rem 3.2rem rgba(31, 38, 135, 0.37);
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    background: #1f2235;
     position: absolute;
     top: 0;
     left: -110%;
@@ -138,8 +134,14 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 3rem;
-    font-size: 175%;
-    color: #00bd7b;
+    font-size: 150%;
+    color: #25ffb3;
+  }
+  .nav__ul .nav__li:hover {
+    -webkit-box-shadow: 0 0.5rem 1rem #1ecc8f;
+            box-shadow: 0 0.5rem 1rem #1ecc8f;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
   }
   .active {
     left: 0%;
