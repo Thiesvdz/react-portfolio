@@ -87,7 +87,8 @@ $blue: #3c99dc;
     }
   }
   .article__1,.article__2,.article__3,.article__4{
-    transition: transform 600ms cubic-bezier(.13,1.08,.83,.67);
+    transition: transform 600ms cubic-bezier(.19,1.02,.83,.32);
+    // transition: transform 600ms cubic-bezier(.13,1.08,.93,.67);
   }
   .article__1 {
     transform: translateX(-10%) rotate(-15deg);
