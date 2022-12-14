@@ -1,0 +1,92 @@
+.contact__section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e2133), to(rgba(24, 160, 112, 0.3))), url("../../../images/contact/contact-bg.jpg");
+  background: linear-gradient(to bottom, #1e2133, rgba(24, 160, 112, 0.3)), url("../../../images/contact/contact-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contact__form {
+  width: 90%;
+  max-width: 70rem;
+  background-color: #1ecc8f;
+  padding: 5rem;
+}
+
+.contact__form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__form .row .input__wrapper {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.contact__form .input__wrapper {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.contact__form .input__wrapper .input, .contact__form .input__wrapper .textarea {
+  width: 100%;
+  padding: 1rem;
+  outline: 0;
+  color: #eee;
+  border: none;
+  border: 0.1rem solid #1e2133;
+  background: transparent;
+  font-size: 2rem;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.contact__form .input__wrapper .input:focus ~ label,
+.contact__form .input__wrapper .input:valid ~ label, .contact__form .input__wrapper .textarea:focus ~ label,
+.contact__form .input__wrapper .textarea:valid ~ label {
+  top: -3.2rem;
+  font-size: 1.3rem;
+}
+
+.contact__form .input__wrapper label {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1.4rem 1.4rem;
+  cursor: text;
+  color: #eee;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact__form .btn__wrapper .contact__btn {
+  padding: 1rem 0;
+  color: #eee;
+  outline: none;
+  background: transparent;
+  border: 0.1rem solid #1e2133;
+  width: 25%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Contact.css.map */

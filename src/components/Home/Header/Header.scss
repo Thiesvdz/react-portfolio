@@ -62,7 +62,7 @@
         &:hover{
             transform: rotate(0deg);
             transform: scale(1.05);
-            box-shadow: 1rem 1rem $brightGreen;
+            box-shadow: 0.75rem 0.75rem $brightGreen, 1.25rem 1.25rem $mediumDarkGreen, 1.75rem 1.75rem $darkGreen;
         }
         &:hover .header__socials__image{
             filter: grayscale(0%);
