@@ -30,6 +30,7 @@ const About = (props) => {
         <div className={classNamePopUp + " popup"}>
           <div className="overlay"></div>
           <div className="popup__content">
+            <figure><img src="" alt=""/>asd</figure>
             <h2>Wie ben ik</h2>
             <p>
               Hoi ik ben Thies van der Zon, 18 jarige software developer. In

@@ -26,11 +26,12 @@ body.classNamePopUp {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #eee;
+    background: linear-gradient(209deg, $offWhite 50%, $brightGreen 50%);
     padding: 3rem 3rem;
     border-radius: 0.5rem;
     max-width: 60rem;
     min-width: 40rem;
+    font-size: 125%;
 }
 
 .close__popup {
