@@ -57,6 +57,7 @@
 .fa-bars {
   color: $offWhite;
   font-size: 150%;
+  cursor: pointer;
 }
 @media screen and (max-width: $bigTablet-width) {
   .nav {

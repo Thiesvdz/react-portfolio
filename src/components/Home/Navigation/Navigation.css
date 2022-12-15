@@ -80,6 +80,7 @@
 .fa-bars {
   color: #eee;
   font-size: 150%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -111,7 +112,7 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background: #1f2235;
+    background: #1e2133;
     position: absolute;
     top: 0;
     left: -110%;
@@ -135,7 +136,7 @@
             align-items: center;
     padding: 3rem;
     font-size: 150%;
-    color: #25ffb3;
+    color: #24ffb2;
   }
   .nav__ul .nav__li:hover {
     -webkit-box-shadow: 0 0.5rem 1rem #1ecc8f;
