@@ -1,0 +1,48 @@
+@import "../../../../Sass/Variables.scss";
+
+body.classNamePopUp {
+    overflow-y: hidden;
+}
+
+.popup, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    // transition: 1s ease-in-out;
+}
+
+.overlay {
+    background: rgba(31, 34, 53, 0.8);
+    overflow-y: hidden;
+
+}
+.popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: linear-gradient(209deg, $offWhite 50%, $brightGreen 50%);
+    padding: 3rem 3rem;
+    border-radius: 0.5rem;
+    max-width: 60rem;
+    min-width: 40rem;
+    font-size: 125%;
+}
+
+.close__popup {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 1rem;
+}
+
+.close__popup__i{
+    color: $darkblue;
+}

@@ -11,9 +11,6 @@ const AboutProfile = (props) => {
     );
   });
 
-  
-
-
   return (
     <article className="about__leftside">
       <figure className="about__image__container">
@@ -23,7 +20,7 @@ const AboutProfile = (props) => {
           {/* {aboutInfo} */}
           <h2 className="about__text__h2">Thies van der Zon</h2>
           <p>Software Developer</p>
-        <button className="about__text__btn" onClick={props.showHideText}>Meer lezen</button>  
+        <button className="about__text__btn" onClick={props.togglePopUp}>Meer lezen</button>  
         </div>
       
       <footer className="about__text__footer">
