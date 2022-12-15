@@ -18,7 +18,7 @@ const About = (props) => {
   };
 
   return (
-    <section className="about__section">
+    <section className="about__section" id="Over">
       <div className="bg__square__container">
         <figure className="bg__square bg__square__1"></figure>
         <figure className="bg__square bg__square__2"></figure>

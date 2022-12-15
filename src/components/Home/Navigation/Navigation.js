@@ -15,7 +15,9 @@ const menuClick = () => {
   let NavigationFromData = NavigationData.map((item,id) => {
     return (
       <li className={item.className} key={id}>
-        {item.title}
+        <a href={item.url} className="navbar__a">
+          {item.title}
+        </a>
         <i className={item.icon + " icons"}></i>
       </li>
     );

@@ -53,23 +53,31 @@
   font-size: 1.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #eee;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  color: #eee;
+  cursor: pointer;
 }
 
-.nav__ul .nav__li:hover {
-  cursor: pointer;
+.nav__ul .nav__li:hover > .navbar__a ~ .fa-solid {
   color: #25ffb3;
 }
 
 .nav__ul .nav__li .fa-solid {
   padding: 0 1rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
-.nav__ul .nav__li .icons {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+.nav__ul .nav__li .navbar__a {
+  text-decoration: none;
+  color: #eee;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.nav__ul .nav__li .navbar__a:hover {
+  color: #25ffb3;
 }
 
 .nav__small {

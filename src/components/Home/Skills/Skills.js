@@ -13,7 +13,7 @@ import SASS from "../../../images/icons-talen/sass.svg"
 
 const Skills = () => {
     return(
-        <section className="section__skills">
+        <section className="section__skills"  id="Skills">
             <SkillsCard 
                 skillsImage={HTML}
                 skillsH2="HTML"
