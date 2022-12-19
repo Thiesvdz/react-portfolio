@@ -1,0 +1,60 @@
+@import "../../../Sass/Variables.scss";
+
+.footer{
+    display: grid;
+    grid-template-rows:    minmax(100px, auto);
+    grid-template-columns: minmax(auto, 60%) 1fr;
+    
+    .footer__header{
+        padding: 0rem 5rem;
+        display: flex;
+        align-items: center;
+        // justify-content: right;
+        .footer__header__h1{
+            color: $offWhite;
+        }
+    }
+
+    .footer__contact__info__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        // gap: 15%;
+       .footer__contact__info__ul{
+            padding: 2.5rem;
+           .footer__contact__info__h3{
+                .footer__contact__info__p{
+
+                }
+           }
+       } 
+    }
+
+    .footer__nav__wrappper{
+        padding: 5rem;
+        width: 75%;
+        .footer__nav__ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .footer__nav__li{
+
+            }
+        }
+    }
+
+    .footer__socials__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .footer__socials__ul{
+            display: flex;
+            gap: 5rem;
+            .footer__socials{
+
+            }
+        }
+    }
+}
+
