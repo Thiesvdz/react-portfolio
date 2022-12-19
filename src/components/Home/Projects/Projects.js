@@ -4,7 +4,7 @@ import "./Projects.css"
 const Projects = () => {
   let projectCardToBeRenderd = ProjectData.map((data) => {
     return (
-      <article className= {data.classNameArticle + " project__article"} >
+      <article className= {data.classNameArticle + " project__article"} id="Projecten" >
         <header className={data.classNameHeader + " project__header"}>
           <figure className="project__figure">
             <img src={data.image} alt="" className="project__image" />

@@ -19,7 +19,7 @@ const About = (props) => {
   };
 
   return (
-    <section className="about__section">
+    <section className="about__section" id="Over">
       <div className="bg__square__container">
         <figure className="bg__square bg__square__1"></figure>
         <figure className="bg__square bg__square__2"></figure>
@@ -30,7 +30,7 @@ const About = (props) => {
         <div className={classNamePopUp + " popup"}>
           <div className="overlay"></div>
           <div className="popup__content">
-            <figure><img src="" alt=""/>asd</figure>
+            {/* <figure><img src="" alt=""/>asd</figure> */}
             <h2>Wie ben ik</h2>
             <p>
               Hoi ik ben Thies van der Zon, 18 jarige software developer. In

@@ -22,7 +22,7 @@ const homepage = () => {
                
             />
             <Skills />
-            <Projects />
+            <Projects  />
             <Contact />
         </>
     )
