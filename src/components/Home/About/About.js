@@ -1,6 +1,7 @@
 import "./About.css";
 import AboutProfile from "./AboutProfile/AboutProfile";
 import { useState, useEffect } from "react";
+import IMGThies from "../../../images/Profile-image/PCHOLDER.jpg"
 import "./Popup/PopUp.css";
 
 const About = (props) => {
@@ -30,19 +31,21 @@ const About = (props) => {
         <div className={classNamePopUp + " popup"}>
           <div className="overlay"></div>
           <div className="popup__content">
-            <figure><img src="" alt=""/>asd</figure>
-            <h2>Wie ben ik</h2>
-            <p>
-              Hoi ik ben Thies van der Zon, 18 jarige software developer. In
-              2020 ben ik begonnen met mijn codeer avontuur, sindsdien zijn mijn
-              skills stevig gegroeid. Ik ben door veel ups en downs gegaan met
-              coderen, maar daar heb ik erg veel van geleerd. Ik ben graag bezig
-              met Front-End development en design, omdat ik het erg leuk vind om
-              mijn creative ideeën tot leven zie komen. In de toekomst wil ik
-              graag frequenter met frameworks werken zoals: React, Vue.js en
-              Laravel. Daarnaast wil ik ook sterker worden in backend
-              voornamelijk met php en databases.
-            </p>
+            <figure className="popup__img__container"><img src={IMGThies} className="popup__img" alt="Foto van Thies"/></figure>
+            <div className="popup__text__wrapper">
+              <h2>Wie ben ik</h2>
+              <p className="popup__text">
+                Hoi ik ben Thies van der Zon, 18 jarige software developer. In
+                2020 ben ik begonnen met mijn codeer avontuur, sindsdien zijn mijn
+                skills stevig gegroeid. Ik ben door veel ups en downs gegaan met
+                coderen, maar daar heb ik erg veel van geleerd. Ik ben graag bezig
+                met Front-End development en design, omdat ik het erg leuk vind om
+                mijn creative ideeën tot leven zie komen. In de toekomst wil ik
+                graag frequenter met frameworks werken zoals: React, Vue.js en
+                Laravel. Daarnaast wil ik ook sterker worden in backend
+                voornamelijk met php en databases.
+              </p>
+            </div>
             <button className="close__popup" onClick={togglePopUp}>
               <i className="fa-solid fa-times close__popup__i"></i>
             </button>
