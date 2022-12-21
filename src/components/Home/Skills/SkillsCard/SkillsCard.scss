@@ -2,35 +2,45 @@ $Green: hsl(159, 100%, 37%);
 $offWhite: #eee;
 $darkblue:  #1f2235;
 
-.article__skills__card{
-    background: white;
-    width: 30rem;
-    height: 30rem;
-    
-    .article__skills__header{
-        height: 55%;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        background: $Green;
-        .article__image__container{
-            width: 12rem;
-
-            .article__image{
+.carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .article__skills__card{
+        background: white;
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        .article__skills__header{
+            height: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background: $Green;
+            .article__image__container{
                 width: 12rem;
+
+                .article__image{
+                    width: 12rem;
+                }
             }
         }
-    }
-    .article__skills__footer{
-        height: 45%;
-        background: $offWhite;
-        padding: 1rem;
-        .article__skills__h2{
-          color: $darkblue;  
-        } 
-        .article__skills__p{
-            color: $darkblue;
+        .article__skills__footer{
+            height: 45%;
+            background: $offWhite;
+            padding: 1rem;
+            .article__skills__h2{
+            color: $darkblue;  
+            } 
+            .article__skills__p{
+                color: $darkblue;
+            }
         }
+        
     }
-    
 }
