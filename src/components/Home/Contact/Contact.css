@@ -10,22 +10,67 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e2133), to(rgba(24, 160, 112, 0.3))), url("../../../images/contact/contact-bg.jpg");
-  background: linear-gradient(to bottom, #1e2133, rgba(24, 160, 112, 0.3)), url("../../../images/contact/contact-bg.jpg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e2133), to(rgba(24, 160, 112, 0.15))), url("../../../images/contact/WereldMap.webp");
+  background: linear-gradient(to bottom, #1e2133, rgba(24, 160, 112, 0.15)), url("../../../images/contact/WereldMap.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.contact__form {
-  width: 90%;
-  max-width: 70rem;
-  background-color: #1ecc8f;
-  padding: 5rem;
+.contact__section .contact__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #eee;
+  padding: 2rem;
 }
 
-.contact__form .row {
+.contact__section .contact__header .contact__h1 {
+  text-transform: uppercase;
+  font-size: 250%;
+}
+
+.contact__section .contact__header .contact__ul .contact__li .contact__icon {
+  padding: 1rem;
+  font-size: 125%;
+}
+
+.contact__section .contact__header .contact__ul .contact__li .contact__email {
+  color: #24ffb2;
+  text-decoration: none;
+}
+
+.contact__section .contact__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+}
+
+.contact__section .contact__form .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,39 +80,39 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.contact__form .row .input__wrapper {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
-}
-
-.contact__form .input__wrapper {
+.contact__section .contact__form .input__wrapper {
   margin-bottom: 3rem;
   position: relative;
 }
 
-.contact__form .input__wrapper .input, .contact__form .input__wrapper .textarea {
-  width: 100%;
-  padding: 1rem;
+.contact__section .contact__form .input__wrapper .input,
+.contact__section .contact__form .input__wrapper .textarea {
+  width: 40rem;
+  padding: 1.4rem;
   outline: 0;
-  color: #eee;
   border: none;
-  border: 0.1rem solid #1e2133;
-  background: transparent;
+  background: #eee;
   font-size: 2rem;
   resize: none;
   font-family: sans-serif;
 }
 
-.contact__form .input__wrapper .input:focus ~ label,
-.contact__form .input__wrapper .input:valid ~ label, .contact__form .input__wrapper .textarea:focus ~ label,
-.contact__form .input__wrapper .textarea:valid ~ label {
+.contact__section .contact__form .input__wrapper .input:focus ~ label,
+.contact__section .contact__form .input__wrapper .input:valid ~ label,
+.contact__section .contact__form .input__wrapper .textarea:focus ~ label,
+.contact__section .contact__form .input__wrapper .textarea:valid ~ label {
   top: -3.2rem;
   font-size: 1.3rem;
+  color: #eee;
 }
 
-.contact__form .input__wrapper label {
+.contact__section .contact__form .input__wrapper label {
   height: 100%;
   position: absolute;
   top: 0;
@@ -75,18 +120,29 @@
   bottom: 0;
   padding: 1.4rem 1.4rem;
   cursor: text;
-  color: #eee;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.contact__form .btn__wrapper .contact__btn {
-  padding: 1rem 0;
+.contact__section .btn__wrapper .contact__btn {
+  padding: 1.5rem 2rem;
   color: #eee;
   outline: none;
-  background: transparent;
+  background: #24ffb2;
+  color: #1e2133;
+  font-weight: 600;
+  font-size: 100%;
   border: 0.1rem solid #1e2133;
-  width: 25%;
+  width: 100%;
   cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+.contact__section .btn__wrapper .contact__btn:hover {
+  background: transparent;
+  border: 0.1rem solid #24ffb2;
+  color: #eee;
 }
 /*# sourceMappingURL=Contact.css.map */
