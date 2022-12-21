@@ -1,0 +1,64 @@
+.skills1 {
+  -webkit-transform: translateX(-125%) scale(0.5);
+          transform: translateX(-125%) scale(0.5);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -4;
+}
+
+.skills2 {
+  -webkit-transform: translateX(-100%) scale(0.7);
+          transform: translateX(-100%) scale(0.7);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -3;
+}
+
+.skills3 {
+  -webkit-transform: translateX(-75%) scale(0.8);
+          transform: translateX(-75%) scale(0.8);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -2;
+}
+
+.skills4 {
+  -webkit-transform: translateX(-50%) scale(0.9);
+          transform: translateX(-50%) scale(0.9);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -1;
+}
+
+.skills5 {
+  -webkit-transform: translateX(0) scale(1.15);
+          transform: translateX(0) scale(1.15);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: 99;
+}
+
+.skills6 {
+  -webkit-transform: translateX(50%) scale(0.9);
+          transform: translateX(50%) scale(0.9);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -1;
+}
+
+.skills7 {
+  -webkit-transform: translateX(75%) scale(0.8);
+          transform: translateX(75%) scale(0.8);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -2;
+}
+
+.skills8 {
+  -webkit-transform: translateX(100%) scale(0.7);
+          transform: translateX(100%) scale(0.7);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  z-index: -3;
+}
+/*# sourceMappingURL=Skills.css.map */

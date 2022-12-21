@@ -1,0 +1,52 @@
+.skills {
+}
+
+.skills1{
+    transform: translateX(-125%) scale(0.5);
+    transition: 500ms;
+    z-index: -4;
+}
+.skills2{
+    transform: translateX(-100%) scale(0.7);
+    transition: 500ms;
+    z-index: -3;
+}
+.skills3{
+    transform: translateX(-75%) scale(0.8);
+    transition: 500ms;
+    z-index: -2;
+
+}
+.skills4{
+    transform: translateX(-50%) scale(0.9);
+    transition: 500ms;
+    z-index: -1;
+
+}
+.skills5{
+    transform: translateX(0) scale(1.15);
+    transition: 500ms;
+    z-index: 99;
+
+}
+.skills6{
+    transform: translateX(50%) scale(0.9);
+    transition: 500ms;
+
+    z-index: -1;
+
+}
+.skills7{
+    transform: translateX(75%) scale(0.8);
+    transition: 500ms;
+
+    z-index: -2;
+
+}
+.skills8{
+    transform: translateX(100%) scale(0.7);
+    transition: 500ms;
+
+    z-index: -3;
+
+}
