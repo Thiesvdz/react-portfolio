@@ -6,7 +6,7 @@ const Contact = () => {
     return ( 
         <section className="contact__section">
             <ContactHeader/>
-            <ContactForm/ >
+            <ContactForm/>
             <div className="btn__wrapper">
                     <button className="contact__btn">verstuur bericht</button>
                 </div>
