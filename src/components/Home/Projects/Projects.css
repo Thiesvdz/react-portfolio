@@ -58,6 +58,7 @@
 .project__section .project__wrapper .project__article .project__header .project__figure {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .project__section .project__wrapper .project__article .project__header .project__figure .project__image {
@@ -91,8 +92,8 @@
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__1 {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__1:hover {
@@ -100,8 +101,8 @@
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__2 {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__2:hover {
@@ -109,8 +110,8 @@
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__3 {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__3:hover {
@@ -118,15 +119,18 @@
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__4 {
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .project__section .project__wrapper .project__article .project__footer .project__ul .icons__4:hover {
   color: #3c99dc;
 }
 
-.project__section .project__wrapper .article__1, .project__section .project__wrapper .article__2, .project__section .project__wrapper .article__3, .project__section .project__wrapper .article__4 {
+.project__section .project__wrapper .article__1,
+.project__section .project__wrapper .article__2,
+.project__section .project__wrapper .article__3,
+.project__section .project__wrapper .article__4 {
   -webkit-transition: -webkit-transform 600ms cubic-bezier(0.19, 1.02, 0.83, 0.32);
   transition: -webkit-transform 600ms cubic-bezier(0.19, 1.02, 0.83, 0.32);
   transition: transform 600ms cubic-bezier(0.19, 1.02, 0.83, 0.32);
@@ -140,6 +144,12 @@
 
 .project__section .project__wrapper .article__1 .header__1 {
   background: #25ffb3;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project__section .project__wrapper .article__1 .header__1:hover {
+  opacity: 0.75;
 }
 
 .project__section .project__wrapper .article__2 {
@@ -149,6 +159,12 @@
 
 .project__section .project__wrapper .article__2 .header__2 {
   background: #ff5733;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project__section .project__wrapper .article__2 .header__2:hover {
+  opacity: 0.75;
 }
 
 .project__section .project__wrapper .article__3 {
@@ -158,6 +174,12 @@
 
 .project__section .project__wrapper .article__3 .header__3 {
   background: #f0db4f;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project__section .project__wrapper .article__3 .header__3:hover {
+  opacity: 0.75;
 }
 
 .project__section .project__wrapper .article__4 {
@@ -167,5 +189,11 @@
 
 .project__section .project__wrapper .article__4 .header__4 {
   background: #3c99dc;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project__section .project__wrapper .article__4 .header__4:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=Projects.css.map */
