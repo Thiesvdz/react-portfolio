@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;CAUd",
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CAErB",
     "sources": [
         "Skills.scss"
     ],

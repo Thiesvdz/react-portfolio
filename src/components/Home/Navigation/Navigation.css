@@ -11,7 +11,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: fixed;
-  z-index: 3;
+  z-index: 99;
 }
 
 .nav .nav__logo__container {

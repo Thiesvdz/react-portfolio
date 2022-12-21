@@ -35,7 +35,7 @@
           transform: translateX(0) scale(1.15);
   -webkit-transition: 500ms;
   transition: 500ms;
-  z-index: 99;
+  z-index: 50;
 }
 
 .skills6 {

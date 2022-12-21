@@ -6,8 +6,8 @@
 
 .carousel .article__skills__card {
   background: white;
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -45,10 +45,30 @@
 }
 
 .carousel .article__skills__card .article__skills__footer .article__skills__h2 {
-  color: #1f2235;
+  color: #1e2133;
 }
 
 .carousel .article__skills__card .article__skills__footer .article__skills__p {
-  color: #1f2235;
+  color: #1e2133;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__skills__card {
+    width: 30rem !important;
+    height: 30rem !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .article__skills__card {
+    width: 25rem !important;
+    height: 25rem !important;
+  }
+  .article__skills__h2 {
+    font-size: 120%;
+  }
+  .article__skills__p {
+    font-size: 90%;
+  }
 }
 /*# sourceMappingURL=SkillsCard.css.map */
