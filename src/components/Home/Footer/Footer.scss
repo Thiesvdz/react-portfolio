@@ -22,11 +22,20 @@
         // gap: 15%;
        .footer__contact__info__ul{
             padding: 2.5rem;
-           .footer__contact__info__h3{
+            display: flex;
+            gap: 5rem;
+            
+            .footer__contact__info__li{
+                color: $offWhite;
+                border: 1px solid red;
+                .footer__contact__info__h3{
+                    font-size: 150%;
                 .footer__contact__info__p{
 
                 }
            }
+            }
+           
        } 
     }
 
