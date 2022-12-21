@@ -1,78 +1,115 @@
 @import "../../../Sass/Variables.scss";
 
-.contact__section{
-    width: 100%;
-    height: 100vh;
+.contact__section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+      to bottom,
+      rgb(30, 33, 51),
+      rgba(24, 160, 112, 0.15)
+    ),
+    url("../../../images/contact/WereldMap.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .contact__header {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background:linear-gradient(
-        to bottom,
-        rgb(30, 33, 51),
-        rgba(24, 160, 112, 0.3)
-      ),url("../../../images/contact/contact-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    align-items: center;
+    flex-direction: column;
+    color: $offWhite;
+    padding: 2rem;
+    .contact__h1 {
+      text-transform: uppercase;
+      font-size: 250%;
+    }
+    .contact__ul {
+      .contact__li {
+        .contact__icon {
+          padding: 1rem;
+          font-size: 125%;
+        }
+        .contact__email {
+          color: $brightGreen;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .contact__form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .input__wrapper {
+      margin-bottom: 3rem;
+      position: relative;
+      // width: 100%;
+      .input,
+      .textarea {
+        width: 40rem;
+        padding: 1.4rem;
+        outline: 0;
+        border: none;
+        background: $offWhite;
+        font-size: 2rem;
+        resize: none;
+        font-family: sans-serif;
+        &:focus ~ label,
+        &:valid ~ label {
+          top: -3.2rem;
+          font-size: 1.3rem;
+          color: $offWhite;
+        }
+      }
+      label {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 1.4rem 1.4rem;
+        cursor: text;
+        transition: 0.3s all;
+      }
+    }
+  }
+
+  .btn__wrapper {
+    .contact__btn {
+      padding: 1.5rem 2rem;
+      color: $offWhite;
+      outline: none;
+      background: $brightGreen;
+      color: $darkblue;
+      font-weight: 600;
+      font-size: 100%;
+      border: 0.1rem solid $darkblue;
+      width: 100%;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.25s all;
+      &:hover {
+        background: transparent;
+        border: 0.1rem solid $brightGreen;
+        color: $offWhite;
+      }
+    }
+  }
 }
-.contact__form{
-    width: 90%;
-    max-width: 70rem;
-    background-color: $mediumDarkGreen;
-    padding: 5rem;
-    .row{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .row .input__wrapper {flex-basis: 48%;}
-    .input__wrapper{
-        margin-bottom: 3rem;
-        position: relative;
-        .input, .textarea{
-            width: 100%;
-            // height: 8rem;
-            padding: 1rem;
-            outline: 0;
-            color: $offWhite;
-            border: none;
-            border: 0.1rem solid $darkblue;
-            background: transparent;
-            font-size: 2rem;
-            resize: none;
-            font-family: sans-serif;
-            &:focus~label,
-            &:valid~label{
-                top: -3.2rem;
-                font-size: 1.3rem;
-            }
-        }
-        label{
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            padding: 1.4rem 1.4rem;
-            cursor: text;
-            color: $offWhite;
-            transition: 0.3s all;
-            
-        }
-    }
-    .btn__wrapper{
-        .contact__btn{
-            padding: 1rem 0;
-            color: $offWhite;
-            outline: none;
-            background: transparent;
-            border: 0.1rem solid $darkblue;
-            width: 25%;
-            cursor: pointer;
-        }
-    }
+@media screen and (max-width: $bigTablet-width) {
 }
-
-
