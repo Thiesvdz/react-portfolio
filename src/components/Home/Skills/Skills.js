@@ -6,7 +6,7 @@ const Skills = () => {
     
 
     return(
-        <section className="section__skills">
+        <section className="section__skills" id="Skills">
             <SkillsCard />
         </section>
     )

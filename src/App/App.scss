@@ -11,11 +11,14 @@ html{
     font-size: 62.5%; /* 1 rem = 10px*/
     background: $darkblue;
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Apercu', sans-serif;
     font-size: 1.5rem;
+    
+
 }
 
 li{

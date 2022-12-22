@@ -4,7 +4,7 @@ import ContactForm from "./ContactSecties/ContactForm"
 
 const Contact = () => {
     return ( 
-        <section className="contact__section">
+        <section className="contact__section" id="Contact">
             <ContactHeader/>
             <ContactForm/>
             <div className="btn__wrapper">

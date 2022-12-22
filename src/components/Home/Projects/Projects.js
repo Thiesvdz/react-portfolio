@@ -22,7 +22,7 @@ const Projects = () => {
     );
   });
 
-  return <section className="project__section">
+  return <section className="project__section" id="Projecten">
       <div className="project__wrapper">
         {projectCardToBeRenderd}
       </div>
