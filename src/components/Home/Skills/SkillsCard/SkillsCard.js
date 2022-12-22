@@ -17,7 +17,7 @@ const SkillsCard = (props) => {
     setTimeout(() => {
       setIndex((index + 1) % SkillsData.length);
       // console.log(index)
-    }, 4000);
+    }, 3500);
   }, [index]);
 
   let skillsCardToBeRenderd = SkillsData.map((data) => {
