@@ -7,10 +7,10 @@ $blue: #3c99dc;
 .RekenProject__container{
     height: 100vh;
     background: $green;
-    padding: 5rem;
+    padding: 3rem;
     .RekenProject__section__wrapper{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 55%;
         grid-template-rows: auto;
         background: rgb(73,79,116);
         background: linear-gradient(180deg, rgba(73,79,116,1) 0%, rgba(30,33,51,1) 100%);

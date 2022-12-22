@@ -1,3 +1,5 @@
+@import "../../../../Sass/Variables.scss";
+
 .sectionLeft__wrapper{
     display: flex;
     justify-content: center;
@@ -18,13 +20,69 @@
     .sectionbottom__section{
         height: 35%;
         width: 90%;
-
+        padding: 2rem;
+        .sectionbottom__header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 20%;
+            .sectionbottom__h1{
+                color: $brightGreen;
+                font-size: 150%;
+                text-transform: uppercase;
+            }
+        }
+        .sectionbottom__text__wrapper{
+            height: 60%;
+            .sectionbottom__p{
+                color: $offWhite;
+                font-size: 110%;
+                padding: 0rem 4rem;
+            }
+        }
+        .sectionbottom__footer{
+            height: 20%;
+            display: flex;
+            
+            .sectionbottom__ul{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                // justify-content: space-evenly;
+                .sectionbottom__li{
+                    .sectionbottom__i{
+                        color: $offWhite;
+                        font-size: 250%;
+                        transition: 0.25s all;
+                    }
+                    .fa-html5{
+                        &:hover{
+                            color: #FF5733;
+                        }
+                    }
+                    .fa-css3-alt{
+                        &:hover{
+                            color: #2965f1;
+                        }
+                    }
+                    .fa-js{
+                        &:hover{
+                            color: #f0db4f;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .sectiontop__section,.sectionbottom__section{
-        background: rgba(255, 255, 255, 0.151);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.11);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
+        border-radius: 0.5rem;
     }
 }
