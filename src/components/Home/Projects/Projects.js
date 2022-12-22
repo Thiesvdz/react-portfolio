@@ -8,12 +8,12 @@ const Projects = () => {
       <article className= {data.classNameArticle + " project__article"} >
         <header className={data.classNameHeader + " project__header"}>
           <figure className="project__figure">
-            <Link to="test"><img src={data.image} alt="" className="project__image" /></Link>
+            <Link to="/Test"> <img src={data.image} alt="" className="project__image" /></Link>
           </figure>
         </header>
         <footer className="project__footer">
           <ul className="project__ul">
-            <i className={data.icons1}><a href=""></a></i>
+           <i className={data.icons1}></i>
             <i className={data.icons2}><a href=""></a></i>
             <i className={data.icons3}><a href=""></a></i>
           </ul>
