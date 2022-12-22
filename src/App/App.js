@@ -6,12 +6,16 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Homepage}></Route>
-        <Route path="/Test" component={Test}></Route>
+        <Route exact path="/Test">
+          <Test/>
+        </Route>
+        <Route exact path="/">
+          <Homepage/>
+        </Route>
         {/* <Route path="/" component={}></Route> */}
         {/* <Route path="/" component={}></Route> */}
       </Switch>
-    </Router>
+   </Router>
   );
 };
 

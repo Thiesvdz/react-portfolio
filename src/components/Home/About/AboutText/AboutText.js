@@ -1,6 +1,6 @@
 // import AnimatedText from 'react-animated-text-content';
 const AboutText = (props) => {
-  console.log(props.className)
+  // console.log(props.className)
 
   return (
     <article className="about__rightside" >
