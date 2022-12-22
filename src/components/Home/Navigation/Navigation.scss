@@ -33,19 +33,26 @@
     font-size: 1.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #eee;
     transition: 0.3s all;
-
-    &:hover {
-      cursor: pointer;
-      color: #25ffb3;
+    color: #eee;
+    cursor: pointer;
+    &:hover > .navbar__a ~ .fa-solid {
+        color: #25ffb3;
     }
     .fa-solid {
       padding: 0 1rem;
+      transition: 0.3s all;
+
     }
-    .icons {
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
+    .navbar__a{
+      text-decoration: none;
+      color: #eee;
+      transition: 0.3s all;
+
+      &:hover{
+        color: #25ffb3;
+
+      }
     }
   }
 }

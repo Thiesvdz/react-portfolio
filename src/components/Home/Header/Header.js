@@ -7,7 +7,7 @@ const Header = (props) => {
     
 
     return(
-        <header className="header">
+        <header className="header" id="Header">
             <section>
                 <div className="header__intro__text"> 
                     <h3 className="header__h3">{props.titelH3 || "Placeholder"}</h3>
