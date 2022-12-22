@@ -1,13 +1,13 @@
 import "./App.css";
 import Homepage from "../pages/homepage";
-import Test from "../components/ProjectPages/Test";
+import RekenProject from "../components/ProjectPages/RekenProject/RekenProject"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/Test">
-          <Test/>
+        <Route exact path="/RekenProject">
+          <RekenProject/>
         </Route>
         <Route exact path="/">
           <Homepage/>

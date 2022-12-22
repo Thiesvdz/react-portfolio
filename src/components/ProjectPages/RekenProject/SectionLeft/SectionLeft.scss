@@ -1,0 +1,30 @@
+.sectionLeft__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    .sectiontop__section{
+        height: 45%;
+        width: 90%;
+        .sectiontop__figure{
+            
+            .sectiontop__image__slider{
+
+            }
+        }
+    }
+
+    .sectionbottom__section{
+        height: 35%;
+        width: 90%;
+
+    }
+
+    .sectiontop__section,.sectionbottom__section{
+        background: rgba(255, 255, 255, 0.151);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+}

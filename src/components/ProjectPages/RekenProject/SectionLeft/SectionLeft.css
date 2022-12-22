@@ -1,0 +1,35 @@
+.sectionLeft__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.sectionLeft__wrapper .sectiontop__section {
+  height: 45%;
+  width: 90%;
+}
+
+.sectionLeft__wrapper .sectionbottom__section {
+  height: 35%;
+  width: 90%;
+}
+
+.sectionLeft__wrapper .sectiontop__section, .sectionLeft__wrapper .sectionbottom__section {
+  background: rgba(255, 255, 255, 0.151);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+/*# sourceMappingURL=SectionLeft.css.map */

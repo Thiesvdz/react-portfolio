@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,wBAAwB,CAAA;EACpB,MAAM,EAAE,KAAK;EACb,UAAU,EAPN,OAAO;EAQX,OAAO,EAAE,IAAI;CAYhB;;AAfD,AAII,wBAJoB,CAIpB,+BAA+B,CAAA;EAC3B,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,kBAAkB,EAAE,IAAI;EACxB,UAAU,EAAE,OAAc;EAC1B,UAAU,EAAE,iDAAoE;EAChF,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAEhB",
+    "sources": [
+        "RekenProject.scss",
+        "../../../Sass/Variables.scss"
+    ],
+    "names": [],
+    "file": "RekenProject.css"
+}

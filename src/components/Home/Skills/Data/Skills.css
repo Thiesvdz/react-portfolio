@@ -31,11 +31,13 @@
 }
 
 .skills5 {
-  -webkit-transform: translateX(0) scale(1.15);
-          transform: translateX(0) scale(1.15);
+  -webkit-transform: translateX(0) scale(1.05);
+          transform: translateX(0) scale(1.05);
   -webkit-transition: 500ms;
   transition: 500ms;
   z-index: 50;
+  -webkit-box-shadow: 0px 0px 5px 2px #000000;
+          box-shadow: 0px 0px 5px 2px #000000;
 }
 
 .skills6 {

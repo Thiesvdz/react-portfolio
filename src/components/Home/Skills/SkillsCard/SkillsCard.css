@@ -5,6 +5,7 @@
 }
 
 .carousel .article__skills__card {
+  border-bottom: 2.5px black solid;
   width: 35rem;
   height: 35rem;
   position: absolute;

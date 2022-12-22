@@ -8,7 +8,7 @@ const Projects = () => {
       <article className= {data.classNameArticle + " project__article"} >
         <header className={data.classNameHeader + " project__header"}>
           <figure className="project__figure">
-            <Link to="/Test"> <img src={data.image} alt="" className="project__image" /></Link>
+            <Link to="/RekenProject"> <img src={data.image} alt="" className="project__image" /></Link>
           </figure>
         </header>
         <footer className="project__footer">
