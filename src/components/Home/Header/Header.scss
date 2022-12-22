@@ -58,11 +58,12 @@
         text-align: center;
         transform: rotate(8deg);
         transition: 0.3s all;
+        box-shadow: 0.75rem 0.75rem $brightGreen, 1.25rem 1.25rem $mediumDarkGreen, 1.75rem 1.75rem $darkGreen;
         
         &:hover{
             transform: rotate(0deg);
             transform: scale(1.05);
-            box-shadow: 0.75rem 0.75rem $brightGreen, 1.25rem 1.25rem $mediumDarkGreen, 1.75rem 1.75rem $darkGreen;
+            box-shadow: none;
         }
         &:hover .header__socials__image{
             filter: grayscale(0%);

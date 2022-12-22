@@ -1,10 +1,7 @@
 @import "../../../../Sass/Variables.scss";
 
-body{
-   .classNamePopUp {
-    height: 100vh;
-    overflow: hidden;
-} 
+body.popup {
+    overflow-y: hidden;
 } 
 
 .popup, .overlay {
@@ -17,12 +14,11 @@ body{
     position: fixed;
     margin-top: 2.5%;
     transition: 500ms;
+    
 }
 
 .overlay {
     background: rgba(31, 34, 53, 0.8);
-    // overflow-y: hidden;
-
 }
 .popup__content {
     position: absolute;

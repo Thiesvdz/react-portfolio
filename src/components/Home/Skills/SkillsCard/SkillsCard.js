@@ -50,8 +50,8 @@ const SkillsCard = (props) => {
     } else classNameCarousel = "skills";
 
     return (
-      <article className={"article__skills__card  " + classNameCarousel}>
-        <header className="article__skills__header">
+      <article className={"article__skills__card  " + classNameCarousel + " " + data.classNameHeader}>
+        <header className="article__skills__header ">
           <figure className="article__image__container">
             <img
               src={data.image}
@@ -61,7 +61,7 @@ const SkillsCard = (props) => {
             />
           </figure>
         </header>
-        <footer className="article__skills__footer">
+        <footer className={"article__skills__footer "+ data.classNameFooter}>
           <h2 className="article__skills__h2">{data.title}</h2>
           <p className="article__skills__p">{data.description}</p>
         </footer>

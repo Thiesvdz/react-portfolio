@@ -8,7 +8,9 @@ $darkblue:  #1f2235;
     height: 100%;
     position: relative;
     .article__skills__card{
-        background: white;
+        // background: white;
+    // background-image: linear-gradient($darkblue, #FF5733 );
+
         width: 35rem;
         height: 35rem;
         position: absolute;
@@ -23,7 +25,7 @@ $darkblue:  #1f2235;
             display: flex;
             align-items: center;
             justify-content: center; 
-            background: $Green;
+
             .article__image__container{
                 width: 12rem;
 
@@ -34,17 +36,58 @@ $darkblue:  #1f2235;
         }
         .article__skills__footer{
             height: 45%;
-            background: $offWhite;
-            padding: 1rem;
+            background: rgba(49, 49, 49, 0.5);
+            padding: 1.4rem;
+            border-top: 2px solid white;
+            // transform: translateY(2);
             .article__skills__h2{
-            color: $darkblue;  
+                color: $offWhite;
+ 
             } 
             .article__skills__p{
-                color: $darkblue;
+                color: $offWhite;
+
             }
         }
         
     }
+}
+.HTML__head{
+    background-image: linear-gradient($darkblue, #FF5733 );
+}
+
+.CSS__head{
+    background-image: linear-gradient($darkblue, #2965f1);
+
+}
+
+.JS__head{
+    background-image: linear-gradient($darkblue, #f0db4f);
+}
+
+.REACT__head{
+    background-image: linear-gradient($darkblue, #61dbfb);
+
+}
+
+.LARAVEL__head{
+    background-image: linear-gradient($darkblue, #fb503b);
+
+}
+
+.PHP__head{
+    background-image: linear-gradient($darkblue, #8993be);
+
+}
+
+.WORDPRESS__head{
+    background-image: linear-gradient($darkblue, #21759b);
+
+}
+
+.SASS__head{
+    background-image: linear-gradient($darkblue, #cc6699);
+
 }
 
 @media screen and (max-width: $desktop-width){.article__skills__card{width: 30rem!important; height: 30rem!important;}}

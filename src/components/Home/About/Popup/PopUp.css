@@ -1,6 +1,5 @@
-body .classNamePopUp {
-  height: 100vh;
-  overflow: hidden;
+body.popup {
+  overflow-y: hidden;
 }
 
 .popup, .overlay {

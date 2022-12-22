@@ -68,6 +68,8 @@
           transform: rotate(8deg);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  -webkit-box-shadow: 0.75rem 0.75rem #24ffb2, 1.25rem 1.25rem #1ecc8f, 1.75rem 1.75rem #18a070;
+          box-shadow: 0.75rem 0.75rem #24ffb2, 1.25rem 1.25rem #1ecc8f, 1.75rem 1.75rem #18a070;
 }
 
 .header .header__image__container:hover {
@@ -75,8 +77,8 @@
           transform: rotate(0deg);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-box-shadow: 0.75rem 0.75rem #24ffb2, 1.25rem 1.25rem #1ecc8f, 1.75rem 1.75rem #18a070;
-          box-shadow: 0.75rem 0.75rem #24ffb2, 1.25rem 1.25rem #1ecc8f, 1.75rem 1.75rem #18a070;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .header .header__image__container:hover .header__socials__image {
