@@ -1,18 +1,8 @@
-
-.tijdlijn__dot__eye{
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: hsl(11, 100%, 45%);
-    position: absolute;
-    left: calc(5% - 2.2rem);
-    border-radius: 50%;
-    margin-top: 0.7rem;
+.tijdlijn__dot{
+    background-color: #ff5733;
 }
 
-.tijdlijn__date__eye{
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0.6rem 0 1.5rem;
-    color: hsl(11, 100%, 45%);
+.tijdlijn__date{
+    color: #ff5733;
 }
 

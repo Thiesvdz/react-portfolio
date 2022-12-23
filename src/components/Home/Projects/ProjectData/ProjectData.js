@@ -9,7 +9,10 @@ const ProjectData = [
         icons1: "icons icons__1 fa-solid fa-globe",
         icons2: "icons icons__1 fa-brands fa-trello",
         icons3: "icons icons__1 fa-brands fa-github",
-        link: "/rekenproject"
+        link: "/rekenproject",
+
+        previous: "/clip-n-dip",
+        next: "/eyeproject"
     },
     {
         image: TEST,
@@ -18,8 +21,10 @@ const ProjectData = [
         icons1: "icons icons__2 fa-solid fa-globe",
         icons2: "icons icons__2 fa-brands fa-trello",
         icons3: "icons icons__2 fa-brands fa-github",
-        link: "/eyeproject"
+        link: "/eyeproject",
 
+        previous: "/rekenproject",
+        next: "/duurzaamhuis"
     },
     {
         image: TEST,
@@ -28,8 +33,10 @@ const ProjectData = [
         icons1: "icons icons__3 fa-solid fa-globe",
         icons2: "icons icons__3 fa-brands fa-trello",
         icons3: "icons icons__3 fa-brands fa-github",
-        link: "/project3"
+        link: "/duurzaamhuis",
 
+        previous: "/eyeproject",
+        next: "/clip-n-dip"
     },
     {
         image: TEST,
@@ -38,7 +45,10 @@ const ProjectData = [
         icons1: "icons icons__4 fa-solid fa-globe",
         icons2: "icons icons__4 fa-brands fa-trello",
         icons3: "icons icons__4 fa-brands fa-github",
-        link: "/project4"
+        link: "/clip-n-dip",
+
+        previous: "/duurzaamhuis",
+        next: "/rekenproject"
 
     },
 ]

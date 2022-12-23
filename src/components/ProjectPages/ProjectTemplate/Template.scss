@@ -1,12 +1,11 @@
 @import "../../../Sass/Variables.scss";
 $green: #25eea8;
 $orange: #ff5733;
-$yellow: #f0db4f;
+$yellow: #f0db4f; 
 $blue: #3c99dc;
 
 .Template__container{
     height: 100vh;
-    background: rgb(75, 6, 6);
     padding: 3rem;
     .Template__section__wrapper{
         display: grid;

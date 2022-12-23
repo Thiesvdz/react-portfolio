@@ -1,0 +1,16 @@
+.tijdlijn__dot__dh{
+    height: 1.6rem;
+    width: 1.6rem;
+    position: absolute;
+    left: calc(5% - 2.2rem);
+    border-radius: 50%;
+    background-color: #f0db4f;
+    margin-top: 0.7rem;
+}
+
+.tijdlijn__date__dh{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f0db4f;
+    margin: 0.6rem 0 1.5rem;
+}

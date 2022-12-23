@@ -1,10 +1,11 @@
-import "./SectionRight.css";
+import "../../ProjectTemplate/SectionRight/TemplateRight.css";
+import "./SectionRight.css"
 import TijdLijnItem from "./TijdLijnItem/TijdLijnItem";
 import Links from "../Data/Links";
 
 const SectionRight = () => {
   let LinksToBeRenderd = Links.map((Link) => {
-    return <i className={Link.icons + " sectionRightBottom__icon"}></i>;
+    return <i className={Link.icons + " sectionRightBottom__icon__reken"}></i>;
   });
   return (
     <div className="sectionRight__wrapper">

@@ -1,4 +1,5 @@
-import "./SectionLeft.css"
+import "./SectionLeft.css";
+import "../../ProjectTemplate/SectionLeft/TemplateLeft.css";
 import IconsData from "../Data/Icons";
 
 const SectionLeft = () => {
@@ -17,7 +18,7 @@ const SectionLeft = () => {
             </section>
             <section className="sectionbottom__section">
                 <header className="sectionbottom__header">
-                    <h1 className="sectionbottom__h1">Naam Project</h1>
+                    <h1 className="sectionbottom__h1__reken">Naam Project</h1>
                 </header>
                 <div className="sectionbottom__text__wrapper">
                     <p className="sectionbottom__p">

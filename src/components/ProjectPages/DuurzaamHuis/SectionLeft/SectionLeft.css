@@ -1,0 +1,26 @@
+.sectionbottom__h1__dh {
+  color: #f0db4f;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+.sectionbottom__text__wrapper .sectionbottom__p {
+  color: #eee;
+  font-size: 110%;
+  padding: 0rem 4rem;
+}
+
+.sectionbottom__footer {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionbottom__footer .sectionbottom__ul .sectionbottom__li .sectionbottom__i {
+  color: #eee;
+  font-size: 250%;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+/*# sourceMappingURL=SectionLeft.css.map */

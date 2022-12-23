@@ -1,0 +1,54 @@
+@import "../../../../Sass/Variables.scss";
+
+.sectionRight__wrapper{
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    grid-template-rows: auto;
+    .sectionRightTop__section{
+        overflow-y: scroll;
+        height: 55rem;
+        margin: 4rem 0rem;
+    }
+
+    .arrow__wrapper{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fa-chevron-right{
+            color: $offWhite;
+            font-size: 400%;
+        }
+    }
+
+    .sectionRightBottom__section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sectionRightBottom__wrapper{
+            background: rgba(255, 255, 255, 0.11);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            border-radius: 0.5rem;
+            height: 50%;
+            width: 50%;
+            .sectionRightBottom__ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                gap: 5rem;
+                .sectionRightBottom__icon{
+                    color: $offWhite;
+                    font-size: 200%;
+                    transition: 0.25s all;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.sectionRightBottom__icon__clip {
+  color: #eee;
+  font-size: 200%;
+  transition: 0.25s all;
+  cursor: pointer;
+}
+.sectionRightBottom__icon__clip:hover {
+  color: #3c99dc;
+}
