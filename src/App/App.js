@@ -1,19 +1,18 @@
 import "./App.css";
 import Homepage from "../pages/homepage";
-import RekenProject from "../components/ProjectPages/RekenProject/RekenProject"
+// import RekenProject from "../components/ProjectPages/RekenProject/RekenProject"
+import Projectpage from "../pages/projectpage"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/RekenProject">
-          <RekenProject/>
+        <Route path="/projectpage">
+          <Projectpage/>
         </Route>
         <Route exact path="/">
           <Homepage/>
         </Route>
-        {/* <Route path="/" component={}></Route> */}
-        {/* <Route path="/" component={}></Route> */}
       </Switch>
    </Router>
   );

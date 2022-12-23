@@ -1,0 +1,21 @@
+.EyeProject__container {
+  height: 100vh;
+  background: #e62a00;
+  padding: 3rem;
+}
+
+.EyeProject__container .EyeProject__section__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background: #494f74;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d3047), to(#1e2133));
+  background: linear-gradient(180deg, #2d3047 0%, #1e2133 100%);
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+/*# sourceMappingURL=EyeProject.css.map */

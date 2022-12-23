@@ -4,8 +4,8 @@ const TijdLijnItem = (props) => {
         <>
         <div class="tijdlijn__items">
             <div class="tijdlijn__item">
-                <div class="tijdlijn__dot"></div>
-                <div class="tijdlijn__date">{props.tijdlijn__date}</div>
+                <div class="tijdlijn__dot__eye"></div>
+                <div class="tijdlijn__date__eye">{props.tijdlijn__date}</div>
 
                 <div class="tijdlijn__content">
                     <h3>{props.tijdlijn__h3}</h3>

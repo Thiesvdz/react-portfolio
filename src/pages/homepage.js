@@ -9,7 +9,7 @@ const homepage = () => {
         <>
             <Navigation/>
             <Header 
-                titelH1="Ik ben Thies van der Zon"
+                titelH1="Thies van der Zon"
                 titelH2="Enthousiaste en leergierige software developer"
                 titelH3="Welkom op mijn portfolio"
                 imageH2=""

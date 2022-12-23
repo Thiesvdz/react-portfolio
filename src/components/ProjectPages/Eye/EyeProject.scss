@@ -1,0 +1,23 @@
+@import "../../../Sass/Variables.scss";
+$green: hsl(159, 86%, 54%);
+$orange: hsl(11, 100%, 45%);
+$yellow: hsl(52, 84%, 63%);
+$blue: hsl(205, 70%, 55%);
+
+.EyeProject__container{
+    height: 100vh;
+    background: $orange;
+    padding: 3rem;
+
+    .EyeProject__section__wrapper{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto;
+        background: rgb(73,79,116);
+        background: linear-gradient(180deg, rgb(45, 48, 71) 0%, rgba(30,33,51,1) 100%);
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+    }
+}
+

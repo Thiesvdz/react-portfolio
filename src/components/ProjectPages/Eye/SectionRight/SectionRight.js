@@ -4,7 +4,7 @@ import Links from "../Data/Links";
 
 const SectionRight = () => {
   let LinksToBeRenderd = Links.map((Link) => {
-    return <i className={Link.icons + " sectionRightBottom__icon"}></i>;
+    return <i className={Link.icons + " sectionRightBottom__icon__eye"}></i>;
   });
   return (
     <div className="sectionRight__wrapper">

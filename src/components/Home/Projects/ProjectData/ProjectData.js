@@ -9,6 +9,7 @@ const ProjectData = [
         icons1: "icons icons__1 fa-solid fa-globe",
         icons2: "icons icons__1 fa-brands fa-trello",
         icons3: "icons icons__1 fa-brands fa-github",
+        link: "/rekenproject"
     },
     {
         image: TEST,
@@ -17,6 +18,8 @@ const ProjectData = [
         icons1: "icons icons__2 fa-solid fa-globe",
         icons2: "icons icons__2 fa-brands fa-trello",
         icons3: "icons icons__2 fa-brands fa-github",
+        link: "/eyeproject"
+
     },
     {
         image: TEST,
@@ -25,6 +28,8 @@ const ProjectData = [
         icons1: "icons icons__3 fa-solid fa-globe",
         icons2: "icons icons__3 fa-brands fa-trello",
         icons3: "icons icons__3 fa-brands fa-github",
+        link: "/project3"
+
     },
     {
         image: TEST,
@@ -33,6 +38,8 @@ const ProjectData = [
         icons1: "icons icons__4 fa-solid fa-globe",
         icons2: "icons icons__4 fa-brands fa-trello",
         icons3: "icons icons__4 fa-brands fa-github",
+        link: "/project4"
+
     },
 ]
 

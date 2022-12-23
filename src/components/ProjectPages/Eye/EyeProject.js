@@ -1,11 +1,11 @@
-import "./RekenProject.css"
+import "./EyeProject.css"
 import SectionLeft from "./SectionLeft/SectionLeft"
 import SectionRight from "./SectionRight/SectionRight"
 
 const RekenenProject = () => {
     return ( 
-        <main className="RekenProject__container">
-            <article className="RekenProject__section__wrapper">
+        <main className="EyeProject__container">
+            <article className="EyeProject__section__wrapper">
                 <SectionLeft/>
                 <SectionRight/>
             </article>

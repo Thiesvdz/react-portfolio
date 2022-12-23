@@ -1,0 +1,34 @@
+@import "../../../../Sass/Variables.scss";
+$orange: hsl(11, 100%, 45%);
+
+.sectionRight__wrapper{
+ 
+    .arrow__wrapper{
+        .fa-chevron-right{
+            color: $offWhite;
+            font-size: 400%;
+        }
+    }
+
+    .sectionRightBottom__section{
+        
+        .sectionRightBottom__wrapper{
+            background: rgba(255, 255, 255, 0.11);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+           
+            .sectionRightBottom__ul{
+                .sectionRightBottom__icon__eye{
+                    color: $offWhite;
+                    font-size: 200%;
+                    transition: 0.25s all;
+                    &:hover{
+                        color: $orange;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,14 +1,24 @@
 import ProjectData from "./ProjectData/ProjectData";
 import "./Projects.css"
-import {Link} from "react-router-dom";
-
+// import {Link} from "react-router-dom";
+import {
+  Link,
+  Switch,
+  Route,
+  useParams,
+  useRouteMatch
+} from "react-router-dom";
 const Projects = () => {
+
+  let { path, url } = useRouteMatch();
+  let { topicId } = useParams();
+
   let projectCardToBeRenderd = ProjectData.map((data) => {
     return (
       <article className= {data.classNameArticle + " project__article"} >
         <header className={data.classNameHeader + " project__header"}>
           <figure className="project__figure">
-            <Link to="/RekenProject"> <img src={data.image} alt="" className="project__image" /></Link>
+            <Link to={"/projectpage" + data.link}> <img src={data.image} alt="" className="project__image" /></Link>
           </figure>
         </header>
         <footer className="project__footer">
@@ -21,6 +31,13 @@ const Projects = () => {
       </article>
     );
   });
+
+      // <Switch>
+      //   <Route path={`${path}` + data.link}>
+      //     {/* <Topic /> */}
+      //   </Route>
+      // </Switch>
+
 
   return <section className="project__section" id="Projecten">
       <div className="project__wrapper">

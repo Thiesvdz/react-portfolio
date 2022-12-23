@@ -1,11 +1,11 @@
-import "./RekenProject.css"
+import "./Template.css"
 import SectionLeft from "./SectionLeft/SectionLeft"
 import SectionRight from "./SectionRight/SectionRight"
 
-const RekenenProject = () => {
+const Template = () => {
     return ( 
-        <main className="RekenProject__container">
-            <article className="RekenProject__section__wrapper">
+        <main className="Template__container">
+            <article className="Template__section__wrapper">
                 <SectionLeft/>
                 <SectionRight/>
             </article>
@@ -13,4 +13,4 @@ const RekenenProject = () => {
      );
 }
  
-export default RekenenProject;
+export default Template; 
