@@ -89,6 +89,15 @@
 .contact__section .contact__form .input__wrapper {
   margin-bottom: 3rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact__section .contact__form .input__wrapper .input,
@@ -144,5 +153,18 @@
   background: transparent;
   border: 0.1rem solid #24ffb2;
   color: #eee;
+}
+
+@media screen and (max-width: 900px) {
+  .contact__form {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .contact__form .bericht {
+    left: 5% !important;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */
