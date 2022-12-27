@@ -3,6 +3,8 @@ $orange: #ff5733;
 $yellow: #f0db4f;
 $blue: #3c99dc;
 
+@import "../../../Sass/Variables.scss";
+
 .project__section {
   min-height: 100vh;
   display: flex;
@@ -137,4 +139,53 @@ $blue: #3c99dc;
       }
     }
   }
+}
+
+
+@media screen and (max-width: $desktop-width){
+  .project__section {
+    .project__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover > .article__1 {
+        transform: translateY(-100%) rotate(10deg);
+      }
+      &:hover > .article__2 {
+        transform: translateY(-15%) rotate(-10deg);
+
+      }
+      &:hover > .article__3 {
+        transform: translateY(65%) rotate(10deg);
+      }
+      &:hover > .article__4 {
+        transform: translateY(150%) rotate(-10deg);
+      }
+
+      .article__1 {
+        transform: translateY(-100%) rotate(10deg);
+      }
+      .article__2 {
+        transform: translateY(-15%) rotate(-10deg);
+      }
+      .article__3 {
+        transform: translateY(65%) rotate(10deg);
+      }
+      .article__4 {
+        transform: translateY(150%) rotate(-10deg);
+      }
+   
+    .project__article {
+      height: 25rem;
+      width: 20rem;
+      background: white;
+      position: absolute;
+      .project__header {
+        height: 75%;
+        padding: 1.5rem;
+      }
+    }
+   }
+  }
+
 }
