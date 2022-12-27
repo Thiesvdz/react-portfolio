@@ -196,4 +196,60 @@
 .project__section .project__wrapper .article__4 .header__4:hover {
   opacity: 0.75;
 }
+
+@media screen and (max-width: 1024px) {
+  .project__section .project__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project__section .project__wrapper:hover > .article__1 {
+    -webkit-transform: translateY(-100%) rotate(10deg);
+            transform: translateY(-100%) rotate(10deg);
+  }
+  .project__section .project__wrapper:hover > .article__2 {
+    -webkit-transform: translateY(-15%) rotate(-10deg);
+            transform: translateY(-15%) rotate(-10deg);
+  }
+  .project__section .project__wrapper:hover > .article__3 {
+    -webkit-transform: translateY(65%) rotate(10deg);
+            transform: translateY(65%) rotate(10deg);
+  }
+  .project__section .project__wrapper:hover > .article__4 {
+    -webkit-transform: translateY(150%) rotate(-10deg);
+            transform: translateY(150%) rotate(-10deg);
+  }
+  .project__section .project__wrapper .article__1 {
+    -webkit-transform: translateY(-100%) rotate(10deg);
+            transform: translateY(-100%) rotate(10deg);
+  }
+  .project__section .project__wrapper .article__2 {
+    -webkit-transform: translateY(-15%) rotate(-10deg);
+            transform: translateY(-15%) rotate(-10deg);
+  }
+  .project__section .project__wrapper .article__3 {
+    -webkit-transform: translateY(65%) rotate(10deg);
+            transform: translateY(65%) rotate(10deg);
+  }
+  .project__section .project__wrapper .article__4 {
+    -webkit-transform: translateY(150%) rotate(-10deg);
+            transform: translateY(150%) rotate(-10deg);
+  }
+  .project__section .project__wrapper .project__article {
+    height: 25rem;
+    width: 20rem;
+    background: white;
+    position: absolute;
+  }
+  .project__section .project__wrapper .project__article .project__header {
+    height: 75%;
+    padding: 1.5rem;
+  }
+}
 /*# sourceMappingURL=Projects.css.map */
