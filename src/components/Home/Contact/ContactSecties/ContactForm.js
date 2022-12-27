@@ -23,7 +23,7 @@ const ContactHeader = () => {
         </div>
       </div>
 
-      <div className="input__wrapper">
+      <div className="input__wrapper bericht__wrapper">
         <textarea
           name=""
           id="bericht"
@@ -31,7 +31,7 @@ const ContactHeader = () => {
           rows="8"
           required
         ></textarea>
-        <label htmlFor="bericht">
+        <label htmlFor="bericht" className="bericht">
           <i class="fa-regular fa-comments"></i> Bericht
         </label>
       </div>

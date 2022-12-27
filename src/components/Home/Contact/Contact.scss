@@ -58,6 +58,9 @@
     .input__wrapper {
       margin-bottom: 3rem;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       // width: 100%;
       .input,
       .textarea {
@@ -112,4 +115,11 @@
   }
 }
 @media screen and (max-width: $bigTablet-width) {
+  .contact__form {
+    flex-direction: column!important;
+    gap: 0!important;
+    .bericht{
+      left: 5%!important;
+    }
+  }
 }
