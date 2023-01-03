@@ -180,8 +180,8 @@
 .about__section .about__text__footer .about__text__ul .about__text__li .about__text__i {
   font-size: 3rem;
   cursor: pointer;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .about__section .about__text__footer .about__text__ul .about__text__li .about__text__i:hover {
