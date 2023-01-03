@@ -9,6 +9,7 @@ import Footer from "../components/ProjectPages/RekenProject/Footer/Footer";
 import EyeProject from "../components/ProjectPages/Eye/EyeProject";
 import Duurzaamhuis from "../components/ProjectPages/DuurzaamHuis/DuurzaamHuisProject"
 import ClipNDip from "../components/ProjectPages/ClipNDip/ClipNDipProject"
+import Navbar from "../components/Home/Navigation/Navigation"
 
 const ProjectPage = () => {  
     
@@ -17,18 +18,22 @@ const ProjectPage = () => {
     <>
       <Switch>
         <Route path={`${path}/rekenproject`}>
+            {/* <Navbar/> */}
             <RekenProject />
             <Footer h1="Javascript rekenen" />
         </Route>
         <Route path={`${path}/eyeproject`}>
+            {/* <Navbar/> */}
             <EyeProject/>
             <Footer h1="Eye museum" />
         </Route>
         <Route path={`${path}/duurzaamhuis`}>
+            {/* <Navbar/> */}
             <Duurzaamhuis/>
             <Footer h1="Duurzaam huis" />
         </Route>
         <Route path={`${path}/clip-n-dip`}>
+            {/* <Navbar/> */}
             <ClipNDip/>
             <Footer h1="clip-n-dip" />
         </Route>
