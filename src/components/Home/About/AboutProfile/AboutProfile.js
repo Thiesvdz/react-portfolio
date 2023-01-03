@@ -1,13 +1,12 @@
 import aboutImage from "../../../../images/Profile-image/FotoThies.jpg";
-import Aboutp from "../Data/AboutP";
+import AboutIcons from "../Data/AboutIcons";
 
 const AboutProfile = (props) => {
-  let aboutInfo = Aboutp.map((object) => {
+  let aboutIconRendered = AboutIcons.map((Icon) => {
     return (
-      <p className="about__text__p">
-        <span className="about__text__span">{object.title} </span>
-        {object.description}
-      </p>
+      <li className="about__text__li">
+        <i className={Icon.className}></i>
+      </li>
     );
   });
 
@@ -17,7 +16,6 @@ const AboutProfile = (props) => {
         <img src={aboutImage} alt="" className="about__image" />
       </figure>
       <div className="about__text__container">
-          {/* {aboutInfo} */}
           <h2 className="about__text__h2">Thies van der Zon</h2>
           <p>Software Developer</p>
         <button className="about__text__btn" onClick={props.togglePopUp}>Meer lezen</button>  
@@ -25,18 +23,7 @@ const AboutProfile = (props) => {
       
       <footer className="about__text__footer">
         <ul className="about__text__ul">
-          <li className="about__text__li">
-            <i className="fa-brands fa-linkedin about__text__i"></i>
-          </li>
-          <li className="about__text__li">
-            <i className="fa-brands fa-square-github about__text__i"></i>
-            </li>
-          <li className="about__text__li">
-            <i className="fa-sharp fa-solid fa-share about__text__i"></i>
-          </li>
-          <li className="about__text__li">
-            <i className="fa-brands fa-linkedin about__text__i"></i>
-          </li>
+          {aboutIconRendered}
         </ul>
       </footer>
     </article>
