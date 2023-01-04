@@ -1,62 +1,52 @@
 import "./About.css";
-import AboutProfile from "./AboutProfile/AboutProfile";
+import aboutImage from "../../../images/Profile-image/FotoThies.jpg";
+import AboutIcons from "./Data/AboutIcons";
+
 import { useState, useEffect } from "react";
-import IMGThies from "../../../images/Profile-image/PCHOLDER.jpg"
-import "./Popup/PopUp.css";
+import Model from "./Model/Model";
+import { motion, AnimatePresence } from "framer-motion";
 
 const About = (props) => {
+  const [modelOpen, setModelOpen] = useState(true);
 
-  const [popup, setPopUp] = useState(false);
-  const [classNamePopUp, setclassNamePopUp] = useState("");
+  const close = () => setModelOpen(false);
+  const open = () => setModelOpen(true);
 
-  const togglePopUp = () => {
-    setPopUp(!popup);
-    switch (popup) {
-      case false:
-        setclassNamePopUp("classNamePopUp");
-        break;
-      case true:
-        setclassNamePopUp("");
-    }
-  };
-
+  let aboutIconRendered = AboutIcons.map((Icon) => {
+    return (
+      <li className="about__text__li">
+        <i className={Icon.className}></i>
+      </li>
+    );
+  });
   return (
     <section className="about__section" id="Over">
-      <div className="bg__square__container">
+      {/* <div className="bg__square__container">
         <figure className="bg__square bg__square__1"></figure>
         <figure className="bg__square bg__square__2"></figure>
-      </div>
-      <AboutProfile togglePopUp={togglePopUp} />
+      </div> */}
 
-      {popup && (
-        <div className={classNamePopUp + " popup"}>
-          <div className="overlay"></div>
-          <div className="popup__content">
-            <figure className="popup__img__container"><img src={IMGThies} className="popup__img" alt="Foto van Thies"/></figure>
-            <div className="popup__text__wrapper">
-              <header>
-                <h2 className="popup__h2"> - Wie ben ik - </h2>
-                <p className="popup__text">
-                  Hoi ik ben Thies van der Zon, 18 jarige software developer. In
-                  2020 ben ik begonnen met mijn codeer avontuur, sindsdien zijn mijn
-                  skills stevig gegroeid. Ik ben door veel ups en downs gegaan met
-                  coderen, maar daar heb ik erg veel van geleerd. 
-                  <br/><br/>
-                  Ik ben graag bezig
-                  met Front-End development en design, omdat ik het erg leuk vind om
-                  mijn creative ideeën tot leven zie komen. In de toekomst wil ik
-                  graag frequenter met frameworks werken zoals: React, Vue.js en
-                  Laravel. Daarnaast wil ik ook sterker worden in backend
-                  voornamelijk met php en databases.
-                </p>
-              </header>
-            </div>
-            <button className="close__popup" onClick={togglePopUp}>
-              <i className="fa-solid fa-times close__popup__i"></i>
-            </button>
-          </div>
+      <article className="about__leftside">
+          <figure className="about__image__container">
+            <img src={aboutImage} alt="" className="about__image" />
+          </figure>
+        <div className="about__text__container">
+          <h2 className="about__text__h2">Thies van der Zon</h2>
+          <p>Software Developer</p>
+          <AnimatePresence initial={false} exitBeforeEnter={true}>
+            {modelOpen && <Model modelOpen={modelOpen} handleClose={close} />}
+          </AnimatePresence>
+          <motion.button
+            className="about__text__btn"
+            onClick={() => (modelOpen ? close() : open())}
+          >
+            Meer lezen
+          </motion.button>
         </div>
-      )}
+        <footer className="about__text__footer">
+          <ul className="about__text__ul">{aboutIconRendered}</ul>
+        </footer>
+      </article>
     </section>
   );
 };
