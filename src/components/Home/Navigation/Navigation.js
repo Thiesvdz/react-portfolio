@@ -26,7 +26,8 @@ const menuClick = () => {
   return (
     <nav className="nav">
       <figure className="nav__logo__container">
-        <img src={logoTZ} alt="" className="nav__logo" />
+        {/* <img src={logoTZ} alt="" className="nav__logo" /> */}
+        <h3 className="nav__h3"><span className="Thies">Thies</span> van der Zon</h3>
       </figure>
       <div className="nav__small">
           <i className={navClick ? "fa-solid fa-times" : "fa-solid fa-bars" + " dropdown"} onClick={menuClick}></i>

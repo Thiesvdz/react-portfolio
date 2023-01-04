@@ -32,6 +32,15 @@
   height: 7rem;
 }
 
+.nav .nav__logo__container .Thies {
+  color: #24ffb2;
+}
+
+.nav .nav__logo__container .nav__h3 {
+  color: #eee;
+  text-transform: uppercase;
+}
+
 .nav__ul {
   width: 70%;
   display: -webkit-box;
@@ -116,7 +125,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
