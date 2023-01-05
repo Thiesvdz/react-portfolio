@@ -8,8 +8,8 @@ const Contact = () => {
             <ContactHeader/>
             <ContactForm/>
             <div className="btn__wrapper">
-                    <button className="contact__btn">verstuur bericht</button>
-                </div>
+                <button className="contact__btn">verstuur bericht</button>
+            </div>
         </section>
     );
 }

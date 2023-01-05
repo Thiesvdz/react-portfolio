@@ -5,20 +5,20 @@ const ContactHeader = () => {
         <div className="input__wrapper">
           <input type="text" id="name" className="input row" required />
           <label htmlFor="name">
-            <i class="fa-regular fa-user"></i> Naam
+            <i className="fa-regular fa-user"></i> Naam
           </label>
         </div>
         <div className="input__wrapper">
           <input type="text" id="lastName" className="input row" required />
           <label htmlFor="lastName">
-            <i class="fa-regular fa-user"></i> Achternaam
+            <i className="fa-regular fa-user"></i> Achternaam
           </label>
         </div>
 
         <div className="input__wrapper">
           <input type="text" id="email" className="input" required />
           <label htmlFor="email">
-            <i class="fa-regular fa-envelope"></i> Email
+            <i className="fa-regular fa-envelope"></i> Email
           </label>
         </div>
       </div>
@@ -32,7 +32,7 @@ const ContactHeader = () => {
           required
         ></textarea>
         <label htmlFor="bericht" className="bericht">
-          <i class="fa-regular fa-comments"></i> Bericht
+          <i className="fa-regular fa-comments"></i> Bericht
         </label>
       </div>
     </form>

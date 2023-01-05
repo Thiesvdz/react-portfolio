@@ -11,8 +11,8 @@ const Header = (props) => {
       
     >
         <div className="header__intro__text">
-          <motion.div class="border-top" initial={{ opacity: 0, y: -80, x: -80}} whileInView={{ opacity: 1, y: 0, x: 0 }} transition={{ ease: "easeOut", duration: .5 }}></motion.div>
-          <motion.div class="border-bottom"  initial={{ opacity: 0, y: 80, x: 80}} whileInView={{ opacity: 1, y: 0, x: 0 }}  transition={{ ease: "easeOut", duration: .5 }}></motion.div>
+          <motion.div className="border-top" initial={{ opacity: 0, y: -80, x: -80}} whileInView={{ opacity: 1, y: 0, x: 0 }} transition={{ ease: "easeOut", duration: .5 }}></motion.div>
+          <motion.div className="border-bottom"  initial={{ opacity: 0, y: 80, x: 80}} whileInView={{ opacity: 1, y: 0, x: 0 }}  transition={{ ease: "easeOut", duration: .5 }}></motion.div>
 
 
           <motion.div className="a"

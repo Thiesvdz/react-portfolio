@@ -50,13 +50,13 @@ const SkillsCard = (props) => {
     } else classNameCarousel = "skills";
 
     return (
-      <article className={"article__skills__card  " + classNameCarousel + " " + data.classNameHeader}>
+      <article className={"article__skills__card  " + classNameCarousel + " " + data.classNameHeader}key={data.id} >
         <header className="article__skills__header ">
           <figure className="article__image__container">
             <img
               src={data.image}
               alt={data.alt}
-              key={data.id}
+              
               className="article__image"
             />
           </figure>

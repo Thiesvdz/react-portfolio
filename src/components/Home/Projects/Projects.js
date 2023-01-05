@@ -15,7 +15,7 @@ const Projects = () => {
 
   let projectCardToBeRenderd = ProjectData.map((data) => {
     return (
-      <article className= {data.classNameArticle + " project__article"} >
+      <article className= {data.classNameArticle + " project__article"} key={data.id} >
         <header className={data.classNameHeader + " project__header"}>
           <figure className="project__figure">
             <Link to={"/projectpage" + data.link}> <img src={data.image} alt="" className="project__image" /></Link>

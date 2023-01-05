@@ -12,7 +12,8 @@ const ProjectData = [
         link: "/rekenproject",
 
         previous: "/clip-n-dip",
-        next: "/eyeproject"
+        next: "/eyeproject",
+        id: 0
     },
     {
         image: TEST,
@@ -24,7 +25,8 @@ const ProjectData = [
         link: "/eyeproject",
 
         previous: "/rekenproject",
-        next: "/duurzaamhuis"
+        next: "/duurzaamhuis",
+        id: 1
     },
     {
         image: TEST,
@@ -36,7 +38,8 @@ const ProjectData = [
         link: "/duurzaamhuis",
 
         previous: "/eyeproject",
-        next: "/clip-n-dip"
+        next: "/clip-n-dip",
+        id: 2
     },
     {
         image: TEST,
@@ -48,7 +51,8 @@ const ProjectData = [
         link: "/clip-n-dip",
 
         previous: "/duurzaamhuis",
-        next: "/rekenproject"
+        next: "/rekenproject",
+        id: 3
 
     },
 ]

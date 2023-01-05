@@ -1,7 +1,3 @@
-body .backdrop{
-    overflow-y: hidden;
-}
-
 .backdrop{
     position: absolute;
     height: 100%;
@@ -15,59 +11,10 @@ body .backdrop{
     z-index: 99;
 }
 
-.model{
-    width: clamp(50%, 100rem, 90%);
-    /* height: max(65%);     */
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eee;
-}
-.popup__text__wrapper{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    width: 100%;
-    height: 100%;
-}
 
-.popup__header{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    background:#24ffb2;
-}
-.popup__img__container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.popup__img{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-}
 
-.popup__section{
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: left;
-}
 
-.popup__h2{
-    padding: 0 0 2rem 0;
-    font-size: 130%;
-}
 
-.popup__text{
-    font-size: 90%;
-}
 
-.button__wrapper{
-    display: flex;
-    justify-content: flex-end;
-}
+

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import Backdrop from "../Backdrop/Backdrop";
-import "../Backdrop/Backdrop.css"
-import IMGThies from "../../../../images/Profile-image/PCHOLDER.jpg";
+import "./Model.css"
+import "../About.css"
+import RenderIcons from "../Data/RenderIcons"
+import IMGThies from "../../../../images/Profile-image/FotoThies.jpg";
 
 const Modal = ({handleClose, text}) => {
 
@@ -18,8 +20,8 @@ const Modal = ({handleClose, text}) => {
             transition: {
                 duration: 0.1,
                 type: "spring",
-                damping: 25,
-                stiffness: 500,
+                damping: 45,
+                stiffness: 400,
             }
         },
         exit: {
@@ -30,7 +32,7 @@ const Modal = ({handleClose, text}) => {
     }
 
     return ( 
-        <Backdrop onclick={handleClose}>
+        <Backdrop onClick={handleClose}>
             <motion.div 
                 onClick={(e) => e.stopPropagation()}
                 className="model"
@@ -41,14 +43,17 @@ const Modal = ({handleClose, text}) => {
                 // drag
                 >
                     <article className="popup__text__wrapper">
-                        <header className="popup__header">
-                            <figure className="popup__img__container"><img src={IMGThies} className="popup__img" alt="Foto van Thies"/></figure>
+
+                        <section className="popup__section__left">
+                            <figure className="popup__img__container"><img src={IMGThies} className="popup__image" alt="Foto van Thies"/></figure>
                             <div className="text__wrapper">
-                                <h1>aadasdas</h1>
-                                <h2>sadsadas</h2>
-                                <h3>adsadsa</h3>
+                                <h2 className="about__text__h2">Thies van der Zon</h2>
+                                <p>Software Developer</p>
                             </div>
-                        </header>
+                            <footer className="about__text__footer">
+                                <RenderIcons />
+                            </footer>
+                        </section>
 
                         <section className="popup__section">
                             <div className="popup__tekst__wrapper">
